@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
-import { Mail, Phone, MapPin, Send } from "lucide-react"
+import { Mail, Phone, MapPin, Send, CalendarCheck } from "lucide-react"
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -80,18 +80,18 @@ const ContactSection = () => {
                   <Phone className="h-6 w-6 text-kaidevTeal mr-4 flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-medium text-lg mt-0">Phone</h4>
-                    <p className="text-warmWhite/80">+34 (555) 123-4567</p>
+                    <p className="text-warmWhite/80">+34 717 715 330</p>
                   </div>
                 </div>
 
                 <div className="flex items-start">
-                  <MapPin className="h-6 w-6 text-kaidevTeal mr-4 flex-shrink-0 mt-1" />
+                  <CalendarCheck className="h-6 w-6 text-kaidevTeal mr-4 flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-medium text-lg mt-0">Location</h4>
+                    <h4 className="font-medium text-lg mt-0">Calendly</h4>
                     <p className="text-warmWhite/80">
-                      Tech Innovation District
-                      <br />
-                      San Francisco, CA 94105
+                      <a href="https://calendly.com/everlyrusher/60min" target="_blank" className="text-kaidevTeal hover:underline">
+                        Schedule a Call
+                      </a>
                     </p>
                   </div>
                 </div>
