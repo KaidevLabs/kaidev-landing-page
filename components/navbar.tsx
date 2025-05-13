@@ -8,6 +8,7 @@ import { Menu, X } from "lucide-react"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [isHomePage, setIsHomePage] = useState(true)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,29 +23,35 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
+  useEffect(() => {
+    if (window.location.pathname !== "/") {
+      setIsHomePage(false)
+    }
+  }, [window.location.pathname])
+
   const toggleMenu = () => {
     setIsOpen(!isOpen)
   }
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About Us", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Philosophy", href: "#philosophy" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/#home" },
+    { name: "About Us", href: "/#about" },
+    { name: "Services", href: "/#services" },
+    { name: "Philosophy", href: "/#philosophy" },
+    { name: "Contact", href: "/#contact" },
   ]
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-graphiteCore bg-opacity-95 shadow-md" : "bg-transparent"
+        scrolled || !isHomePage ? "bg-graphiteCore bg-opacity-95 shadow-md" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="#home">
+            <Link href="/">
               <Image
                 src="/images/logo_horizontal_flat_color_dark_bg.svg"
                 alt="Kaidev Logo"
