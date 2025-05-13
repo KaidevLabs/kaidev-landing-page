@@ -67,27 +67,27 @@ const ContactSection = () => {
             <div className="prose prose-lg max-w-none text-warmWhite prose-headings:text-warmWhite prose-p:text-warmWhite/80">
               <h3 className="font-heading font-medium text-2xl mb-6">Contact Information</h3>
 
-              <div className="space-y-6">
+              <div className="lg:space-y-6 flex flex-row gap-6 justify-between lg:flex-col">
                 <div className="flex items-start">
                   <Mail className="h-6 w-6 text-kaidevTeal mr-4 flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-medium text-lg">Email</h4>
-                    <p className="text-warmWhite/80">info@kaidev.com</p>
+                    <h4 className="font-medium text-lg mt-0">Email</h4>
+                    <p className="text-warmWhite/80">info@kaidev.io</p>
                   </div>
                 </div>
 
                 <div className="flex items-start">
                   <Phone className="h-6 w-6 text-kaidevTeal mr-4 flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-medium text-lg">Phone</h4>
-                    <p className="text-warmWhite/80">+1 (555) 123-4567</p>
+                    <h4 className="font-medium text-lg mt-0">Phone</h4>
+                    <p className="text-warmWhite/80">+34 (555) 123-4567</p>
                   </div>
                 </div>
 
                 <div className="flex items-start">
                   <MapPin className="h-6 w-6 text-kaidevTeal mr-4 flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-medium text-lg">Location</h4>
+                    <h4 className="font-medium text-lg mt-0">Location</h4>
                     <p className="text-warmWhite/80">
                       Tech Innovation District
                       <br />

@@ -56,7 +56,7 @@ const PhilosophySection = () => {
                   <div key={index} className="flex items-start">
                     <CheckCircle className="h-6 w-6 text-warmWhite mr-3 flex-shrink-0 mt-0.5" />
                     <div>
-                      <h4 className="font-medium text-lg">{value.title}</h4>
+                      <h4 className="font-medium text-lg mt-0">{value.title}</h4>
                       <p className="text-warmWhite/80">{value.description}</p>
                     </div>
                   </div>
