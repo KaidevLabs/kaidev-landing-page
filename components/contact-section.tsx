@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
-import { Mail, Phone, MapPin, Send, CalendarCheck } from "lucide-react"
+import { Mail, Phone, Send, CalendarCheck } from "lucide-react"
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
