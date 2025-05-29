@@ -41,7 +41,7 @@ const PhilosophySection = () => {
             <div className="prose prose-lg max-w-none text-warmWhite prose-headings:text-warmWhite prose-p:text-warmWhite/90">
               <h3 className="font-heading font-medium text-2xl mb-6">The Kaizen Way</h3>
               <p className="mb-6">
-                Kaizen, meaning "change for better," embodies our approach to software development and refactoring. We
+                Kaizen, meaning "change for the better," embodies our approach to software development and refactoring. We
                 believe that even systems that work well can be improved, optimized, and evolved to meet changing needs.
               </p>
               <p className="mb-8">
