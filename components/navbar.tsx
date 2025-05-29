@@ -4,11 +4,13 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Menu, X } from "lucide-react"
+import { usePathname } from 'next/navigation'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const [isHomePage, setIsHomePage] = useState(true)
+  const pathname = usePathname()
+  const [isHomePage, setIsHomePage] = useState(pathname === "/")
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,10 +26,8 @@ const Navbar = () => {
   }, [])
 
   useEffect(() => {
-    if (window.location.pathname !== "/") {
-      setIsHomePage(false)
-    }
-  }, [window.location.pathname])
+    setIsHomePage(pathname === "/")
+  }, [pathname])
 
   const toggleMenu = () => {
     setIsOpen(!isOpen)
