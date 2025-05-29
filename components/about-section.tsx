@@ -35,7 +35,7 @@ const AboutSection = () => {
 
           <div className="order-1 lg:order-2 flex justify-center">
             <div className="relative w-64 h-64 md:w-80 md:h-80">
-              <Image src="/images/isotype_flat_color.svg" alt="Kaidev Isotype" fill className="object-contain" />
+              <Image src="/images/isotype_flat_color.svg" alt="Kaidev Isotype Logo" fill className="object-contain" />
             </div>
           </div>
         </div>

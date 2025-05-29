@@ -71,7 +71,7 @@ const PhilosophySection = () => {
               <div className="absolute inset-8 bg-warmWhite/5 rounded-full"></div>
               <div className="absolute inset-16 bg-warmWhite/5 rounded-full flex items-center justify-center">
                 <div className="relative w-32 h-32">
-                  <Image src="/images/Isotype_flat_white.svg" alt="Kaidev Isotype" fill className="object-contain" />
+                  <Image src="/images/isotype_flat_white.svg" alt="Kaidev Isotype Logo" fill className="object-contain" />
                 </div>
               </div>
             </div>

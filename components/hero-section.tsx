@@ -43,7 +43,7 @@ const HeroSection = () => {
             <div className="relative w-80 h-80">
               <Image
                 src="/images/isotype_gradient.svg"
-                alt="Kaidev Isotype"
+                alt="Kaidev Isotype Logo"
                 fill
                 className="object-contain opacity-80"
               />
