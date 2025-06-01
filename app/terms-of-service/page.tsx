@@ -18,7 +18,7 @@ export default function TermsOfService() {
         <section>
           <h2 className="text-2xl font-semibold mb-4 font-heading">1. Acceptance of Terms</h2>
           <p className="mb-4">
-            By accessing or using the website at <a href="https://kaidev.com" className="text-blue-600 hover:underline">https://kaidev.com</a> ("the Service"), you agree to be bound by these Terms of Service ("Terms"). If you disagree with any part of the terms, you may not access the Service.
+            By accessing or using the website at <a href="https://kaidev.io" className="text-blue-600 hover:underline">https://kaidev.io</a> ("the Service"), you agree to be bound by these Terms of Service ("Terms"). If you disagree with any part of the terms, you may not access the Service.
           </p>
         </section>
 
@@ -129,7 +129,7 @@ export default function TermsOfService() {
           </p>
           <address className="not-italic mb-6">
             <p>Kaidev</p>
-            <p>Email: info@kaidev.com</p>
+            <p>Email: info@kaidev.io</p>
           </address>
         </section>
       </div>

@@ -18,7 +18,7 @@ export default function CookiePolicy() {
         <section>
           <h2 className="text-2xl font-semibold mb-4 font-heading">1. Introduction</h2>
           <p className="mb-4">
-            This Cookie Policy explains how Kaidev ("we," "our," or "us") uses cookies and similar technologies on our website at <a href="https://kaidev.com" className="text-blue-600 hover:underline">https://kaidev.com</a> ("the Website"). This policy provides you with information about how we use cookies, what types of cookies we use, and how you can control them.
+            This Cookie Policy explains how Kaidev ("we," "our," or "us") uses cookies and similar technologies on our website at <a href="https://kaidev.io" className="text-blue-600 hover:underline">https://kaidev.io</a> ("the Website"). This policy provides you with information about how we use cookies, what types of cookies we use, and how you can control them.
           </p>
           <p className="mb-4">
             Please read this Cookie Policy carefully. By continuing to browse or use our Website, you agree to our use of cookies as described in this policy.
@@ -91,7 +91,7 @@ export default function CookiePolicy() {
           </p>
           <address className="not-italic mb-6">
             <p>Kaidev</p>
-            <p>Email: info@kaidev.com</p>
+            <p>Email: info@kaidev.io</p>
           </address>
         </section>
       </div>

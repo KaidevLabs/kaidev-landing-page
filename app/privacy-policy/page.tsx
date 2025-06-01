@@ -140,7 +140,7 @@ export default function PrivacyPolicy() {
           </p>
           <address className="not-italic mb-6">
             <p>Kaidev</p>
-            <p>Email: info@kaidev.com</p>
+            <p>Email: info@kaidev.io</p>
           </address>
         </section>
       </div>
