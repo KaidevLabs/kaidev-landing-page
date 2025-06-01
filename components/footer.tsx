@@ -40,27 +40,27 @@ const Footer = () => {
             <h3 className="font-heading font-medium text-lg mb-4 text-warmWhite">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#home" className="text-warmWhite/70 hover:text-kaidevTeal transition-colors">
+                <Link href="/#home" className="text-warmWhite/70 hover:text-kaidevTeal transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="#about" className="text-warmWhite/70 hover:text-kaidevTeal transition-colors">
+                <Link href="/#about" className="text-warmWhite/70 hover:text-kaidevTeal transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="text-warmWhite/70 hover:text-kaidevTeal transition-colors">
+                <Link href="/#services" className="text-warmWhite/70 hover:text-kaidevTeal transition-colors">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="#philosophy" className="text-warmWhite/70 hover:text-kaidevTeal transition-colors">
+                <Link href="/#philosophy" className="text-warmWhite/70 hover:text-kaidevTeal transition-colors">
                   Philosophy
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="text-warmWhite/70 hover:text-kaidevTeal transition-colors">
+                <Link href="/#contact" className="text-warmWhite/70 hover:text-kaidevTeal transition-colors">
                   Contact
                 </Link>
               </li>
