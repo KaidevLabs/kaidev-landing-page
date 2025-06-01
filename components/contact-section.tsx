@@ -89,7 +89,7 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-medium text-lg mt-0">Calendly</h4>
                     <p className="text-warmWhite/80">
-                      <a href="https://calendly.com/everlyrusher/60min" target="_blank" className="text-kaidevTeal hover:underline">
+                      <a href="https://cal.com/kaidev/60min" target="_blank" className="text-kaidevTeal hover:underline">
                         Schedule a Call
                       </a>
                     </p>
