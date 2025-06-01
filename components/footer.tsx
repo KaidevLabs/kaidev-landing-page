@@ -25,25 +25,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-warmWhite/70 hover:text-kaidevTeal transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-warmWhite/70 hover:text-kaidevTeal transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
+                href="https://github.com/EverlyRusher"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-warmWhite/70 hover:text-kaidevTeal transition-colors"
