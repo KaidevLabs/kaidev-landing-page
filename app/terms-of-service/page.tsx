@@ -9,7 +9,7 @@ export default function TermsOfService() {
   return (
     <div className="container mx-auto px-4 pb-12 pt-24 max-w-4xl">
       <h1 className="text-4xl font-bold mb-8 font-heading">Terms of Service</h1>
-      
+
       <p className="text-lg mb-6">
         Last updated: May 13, 2025
       </p>
@@ -129,8 +129,7 @@ export default function TermsOfService() {
           </p>
           <address className="not-italic mb-6">
             <p>Kaidev</p>
-            <p>Email: legal@kaidev.com</p>
-            <p>Phone: +1 (123) 456-7890</p>
+            <p>Email: info@kaidev.com</p>
           </address>
         </section>
       </div>

@@ -9,7 +9,7 @@ export default function PrivacyPolicy() {
   return (
     <div className="container mx-auto px-4 pb-12 pt-24 max-w-4xl">
       <h1 className="text-4xl font-bold mb-8 font-heading">Privacy Policy</h1>
-      
+
       <p className="text-lg mb-6">
         Last updated: May 13, 2025
       </p>
@@ -27,7 +27,7 @@ export default function PrivacyPolicy() {
 
         <section>
           <h2 className="text-2xl font-semibold mb-4 font-heading">2. Information We Collect</h2>
-          
+
           <h3 className="text-xl font-semibold mb-3 font-heading">Personal Information</h3>
           <p className="mb-4">
             We may collect personal information that you voluntarily provide to us when you express an interest in obtaining information about us or our products and services, when you participate in activities on the website, or otherwise when you contact us. The personal information we collect may include:
@@ -140,8 +140,7 @@ export default function PrivacyPolicy() {
           </p>
           <address className="not-italic mb-6">
             <p>Kaidev</p>
-            <p>Email: privacy@kaidev.com</p>
-            <p>Phone: +1 (123) 456-7890</p>
+            <p>Email: info@kaidev.com</p>
           </address>
         </section>
       </div>
