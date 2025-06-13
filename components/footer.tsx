@@ -60,6 +60,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/#testimonials" className="text-warmWhite/70 hover:text-kaidevTeal transition-colors">
+                  Testimonials
+                </Link>
+              </li>
+              <li>
                 <Link href="/#contact" className="text-warmWhite/70 hover:text-kaidevTeal transition-colors">
                   Contact
                 </Link>
