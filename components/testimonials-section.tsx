@@ -65,8 +65,8 @@ const TestimonialsSection = () => {
             </div>
 
             <div className="relative z-10">
-              <p className="text-lg md:text-xl text-graphiteCore mb-8 italic ">"{testimonials[currentIndex].quote}"</p>
-              <p className="text-lg md:text-sm text-center text-graphiteCore mb-8 italic">"{testimonials[currentIndex].translation}"</p>
+              <p className="text-lg md:text-xl mb-8 italic ">"{testimonials[currentIndex].quote}"</p>
+              <p className="text-lg text-sm text-center text-graphiteCore mb-8 italic">"{testimonials[currentIndex].translation}"</p>
 
               {testimonials[currentIndex].authors.map(author => (
                 <div className="flex flex-col items-center">
@@ -76,12 +76,6 @@ const TestimonialsSection = () => {
                   <p className="text-sm text-graphiteCore/70">{author.position}</p>
                 </div>
               ))}
-              {/* <div className="flex flex-col items-center">
-                <p className="font-medium text-graphiteCore">
-                  <Link href={testimonials[currentIndex].url ?? ""} target="_blank">{testimonials[currentIndex].author}</Link>
-                </p>
-                <p className="text-sm text-graphiteCore/70">{testimonials[currentIndex].position}</p>
-              </div> */}
             </div>
 
             <div className="flex justify-center mt-8 space-x-4">
