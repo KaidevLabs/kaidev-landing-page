@@ -68,8 +68,8 @@ const TestimonialsSection = () => {
               <p className="text-lg md:text-xl mb-8 italic ">"{testimonials[currentIndex].quote}"</p>
               <p className="text-lg text-sm text-center text-graphiteCore mb-8 italic">"{testimonials[currentIndex].translation}"</p>
 
-              {testimonials[currentIndex].authors.map(author => (
-                <div className="flex flex-col items-center">
+              {testimonials[currentIndex].authors.map((author, i) => (
+                <div key={`${i}-${author.name}`} className="flex flex-col items-center">
                   <p className="font-medium text-graphiteCore">
                     <Link href={author.url ?? ""} target="_blank">{author.name}</Link>
                   </p>
