@@ -6,7 +6,9 @@ export default function BlogIndex() {
 
   return (
     <div className="container mx-auto px-4 pb-12 pt-24 max-w-4xl">
-      <h1 className="text-4xl font-bold mb-8 font-heading">Blog Posts</h1>
+      <h1 className="text-4xl font-bold mb-8 font-heading">
+        Blog <span className="text-kaidevTeal">Posts</span>
+      </h1>
 
       <div className="space-y-8">
         {allPostsData.map(({ slug, title, date, description, author }) => (
