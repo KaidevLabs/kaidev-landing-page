@@ -40,6 +40,7 @@ const Navbar = () => {
     { name: "Philosophy", href: "/#philosophy" },
     { name: "Testimonials", href: "/#testimonials" },
     { name: "Contact", href: "/#contact" },
+    { name: "Blog", href: "/blog" },
   ]
 
   return (
