@@ -14,9 +14,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Kaidev | Software Development & Code Refactoring",
-  description:
-    "Consultancy specializing in software development and code refactoring, inspired by the Japanese philosophy of Kaizen (continuous improvement).",
-    generator: 'v0.dev'
+  description: "Consultancy specializing in software development and code refactoring, inspired by the Japanese philosophy of Kaizen (continuous improvement).",
 }
 
 export default function RootLayout({
