@@ -1,6 +1,7 @@
 import fs from 'fs';
-import path from 'path';
 import matter from 'gray-matter';
+import path from 'path';
+import { z } from 'zod';
 
 const postsDirectory = path.join(process.cwd(), 'app', 'blog', 'posts');
 
@@ -16,6 +17,16 @@ export type PostData = {
   metadata: PostMetadata;
   content: string;
 };
+
+const PostFrontmatterSchema = z.object({
+  title: z.string(),
+  author: z.string(),
+  date: z.date(),
+  description: z.string(),
+});
+
+// y luego en la función:
+//const metadata = PostFrontmatterSchema.parse(matterResult.data);
 
 export function getSortedPostsData(): PostMetadata[] {
   // Get file names under /posts
@@ -34,7 +45,7 @@ export function getSortedPostsData(): PostMetadata[] {
     // Combine the data with the slug
     return {
       slug,
-      ...(matterResult.data as { title: string; author: string; date: string; description: string }),
+      ...(PostFrontmatterSchema.parse(matterResult.data)),
     };
   });
 
@@ -67,7 +78,7 @@ export async function getPostData(slug: string): Promise<PostData> {
   return {
     metadata: {
       slug,
-      ...(matterResult.data as { title: string; author: string; date: string; description: string }),
+      ...(PostFrontmatterSchema.parse(matterResult.data)),
     },
     content: matterResult.content,
   };
