@@ -35,10 +35,6 @@ export default async function BlogPost({ params }: { params: { slug: string } })
     notFound();
   }
 
-  if (!postData) {
-    notFound();
-  }
-
   return (
     <div className="container mx-auto px-4 pb-12 pt-24 max-w-4xl">
       <h1 className="text-4xl font-bold mb-4 font-heading">{postData.metadata.title}</h1>
