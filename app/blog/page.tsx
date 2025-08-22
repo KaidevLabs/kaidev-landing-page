@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { getSortedPostsData } from '@/lib/blog';
+import { formatDate } from '@/lib/utils';
 
 export default function BlogIndex() {
   const allPostsData = getSortedPostsData();
@@ -19,7 +20,7 @@ export default function BlogIndex() {
               </Link>
             </h2>
             <p className="text-sm text-muted-foreground mb-2">
-              By {author} on {new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+              By {author} on {formatDate(date)}
             </p>
             <p className="text-lg text-gray-700 dark:text-gray-300">{description}</p>
           </div>
