@@ -1,7 +1,8 @@
+import { CustomComponent } from '@/components/mdx-components';
 import { MDXRemote } from 'next-mdx-remote/rsc';
+import { formatDate } from '@/lib/utils';
 import { getPostData, getAllPostSlugs } from '@/lib/blog';
 import { notFound } from 'next/navigation';
-import { CustomComponent } from '@/components/mdx-components'; // Import your custom components
 
 // Define custom components available in MDX
 const components = {
@@ -39,7 +40,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
     <div className="container mx-auto px-4 pb-12 pt-24 max-w-4xl">
       <h1 className="text-4xl font-bold mb-4 font-heading">{postData.metadata.title}</h1>
       <p className="text-sm text-muted-foreground mb-8">
-        By {postData.metadata.author} on {new Date(postData.metadata.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+        By {postData.metadata.author} on {formatDate(postData.metadata.date)}
       </p>
       <article className="prose dark:prose-invert max-w-none">
         <MDXRemote source={postData.content} components={components} />
