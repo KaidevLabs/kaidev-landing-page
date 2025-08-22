@@ -20,12 +20,6 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const postData = await getPostData(params.slug);
 
-  if (!postData) {
-    return {
-      title: 'Post Not Found',
-    };
-  }
-
   return {
     title: postData.metadata.title,
     description: postData.metadata.description,
