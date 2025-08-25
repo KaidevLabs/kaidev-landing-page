@@ -66,7 +66,7 @@ export function getAllPostSlugs() {
 
 export const getPostData = cache(async (slug: string): Promise<PostData> => {
   const fullPath = path.join(postsDirectory, `${slug}.mdx`);
-  const fileContents = fs.readFileSync(fullPath, 'utf8');
+  const fileContents = await fs.promises.readFile(fullPath, 'utf8');
 
   // Use gray-matter to parse the post frontmatter and content
   const matterResult = matter(fileContents);
