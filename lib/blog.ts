@@ -1,6 +1,7 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import path from 'path';
+import { cache } from 'react';
 import { z } from 'zod';
 
 const postsDirectory = path.join(process.cwd(), 'app', 'blog', 'posts');
@@ -63,7 +64,7 @@ export function getAllPostSlugs() {
   });
 }
 
-export async function getPostData(slug: string): Promise<PostData> {
+export const getPostData = cache(async (slug: string): Promise<PostData> => {
   const fullPath = path.join(postsDirectory, `${slug}.mdx`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 
@@ -77,4 +78,4 @@ export async function getPostData(slug: string): Promise<PostData> {
     },
     content: matterResult.content,
   };
-}
+});
