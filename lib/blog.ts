@@ -9,7 +9,7 @@ export type PostMetadata = {
   slug: string;
   title: string;
   author: string;
-  date: string;
+  date: Date;
   description: string;
 };
 
@@ -27,7 +27,6 @@ const PostFrontmatterSchema = z.object({
 
 // y luego en la función:
 //const metadata = PostFrontmatterSchema.parse(matterResult.data);
-
 export function getSortedPostsData(): PostMetadata[] {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
@@ -50,13 +49,9 @@ export function getSortedPostsData(): PostMetadata[] {
   });
 
   // Sort posts by date
-  return allPostsData.sort((a, b) => {
-    if (a.date < b.date) {
-      return 1;
-    } else {
-      return -1;
-    }
-  });
+  return allPostsData.sort(
+      (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
+  );
 }
 
 export function getAllPostSlugs() {
