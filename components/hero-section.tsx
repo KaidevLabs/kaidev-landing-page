@@ -17,8 +17,9 @@ const HeroSection = () => {
                 <span className="text-kaidevTeal">With Purpose</span>
               </h1>
               <p className="text-lg md:text-xl mb-8 max-w-2xl text-warmWhite/90">
-                Specialized consultancy in software development and code refactoring, inspired by the Japanese
-                philosophy of Kaizen — continuous improvement.
+                Get Performance and Automation you can rely on. We engineer
+                high-value software solutions that turn your biggest technical challenges
+                into your greatest competitive advantages.
               </p>
             </div>
 

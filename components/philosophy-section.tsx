@@ -30,7 +30,7 @@ const PhilosophySection = () => {
         <div className="text-center mb-16">
           <h2 className="font-heading font-semibold text-3xl sm:text-4xl md:text-5xl mb-4">Our Philosophy</h2>
           <p className="text-lg text-warmWhite/90 max-w-2xl mx-auto">
-            At the core of Kaidev is the Japanese concept of Kaizen — a commitment to continuous improvement in all
+            At the core of Kaidev is the Japanese concept of Kaizen - a commitment to continuous improvement in all
             aspects of our work.
           </p>
           <div className="w-20 h-1 bg-warmWhite mx-auto mt-6"></div>

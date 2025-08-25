@@ -21,7 +21,7 @@ const Footer = () => {
             </Link>
             <p className="mb-6 max-w-md">
               Consultancy specializing in software development and code refactoring, inspired by the Japanese philosophy
-              of Kaizen — continuous improvement.
+              of Kaizen - continuous improvement.
             </p>
             <div className="flex space-x-4">
               <a
