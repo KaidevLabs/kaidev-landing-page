@@ -4,10 +4,8 @@ import { formatDate } from '@/lib/utils';
 import { getPostData, getAllPostSlugs } from '@/lib/blog';
 import { notFound } from 'next/navigation';
 
-// Define custom components available in MDX
 const components = {
   CustomComponent,
-  // Add other custom components here
 };
 
 // Generate static paths for all blog posts

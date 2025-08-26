@@ -12,6 +12,3 @@ export const CustomComponent: React.FC<CustomComponentProps> = ({ text }) => {
     </div>
   );
 };
-
-// You can export other components here as well
-// export const AnotherComponent = () => <div>Another component</div>;
