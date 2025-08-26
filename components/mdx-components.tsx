@@ -19,6 +19,7 @@ export const BookAppointmentButton: React.FC = () => {
     <div className="w-full grid justify-center my-12">
       <a
         href="https://cal.com/kaidev/60min"
+        target="_blank"
         className="no-underline inline-flex items-center justify-center px-6 py-5
         bg-kaidevTeal text-warmWhite rounded-md font-medium transition-all
         hover:bg-kaidevTeal/90 focus:outline-none focus:ring-2 focus:ring-kaidevTeal
