@@ -17,8 +17,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const postData = await getPostData(params.slug);
+export async function generateMetadata({ params }: Promise<{ params: { slug: string } }>) {
+  const { slug } = await params;
+  const postData = await getPostData(slug);
 
   return {
     title: postData.metadata.title,
@@ -26,10 +27,11 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-export default async function BlogPost({ params }: { params: { slug: string } }) {
+export default async function BlogPost({ params }: Promise<{ params: { slug: string } }>) {
   let postData;
   try {
-    postData = await getPostData(params.slug);
+    const { slug } = await params;
+    postData = await getPostData(slug);
   } catch (error) {
     // If the file doesn't exist, return a 404
     notFound();
