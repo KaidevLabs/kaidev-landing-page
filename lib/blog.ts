@@ -26,8 +26,6 @@ const PostFrontmatterSchema = z.object({
   description: z.string(),
 });
 
-// y luego en la función:
-//const metadata = PostFrontmatterSchema.parse(matterResult.data);
 export function getSortedPostsData(): PostMetadata[] {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
