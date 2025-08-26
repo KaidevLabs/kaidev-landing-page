@@ -71,7 +71,7 @@ const ContactSection = () => {
                 <Mail className="h-6 w-6 text-kaidevTeal mr-4 flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-medium text-lg mt-0">Email</h4>
-                  <p className="text-warmWhite/80">info@kaidev.io</p>
+                  <a href="mailto:info@kaidev.io" className="text-warmWhite/80">info@kaidev.io</a>
                 </div>
               </div>
 
@@ -79,9 +79,15 @@ const ContactSection = () => {
                 <CalendarCheck className="h-6 w-6 text-kaidevTeal mr-4 flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-medium text-lg mt-0">15min Call - Free</h4>
+                  <p className="text-warmWhite/80 mb-4">
+                    Let’s explore how we can help you and your business.
+                  </p>
                   <p className="text-warmWhite/80">
-
-                    <a href="https://cal.com/kaidev/15min" target="_blank" className="text-kaidevTeal hover:underline">
+                    <a
+                      href="https://cal.com/kaidev/15min"
+                      target="_blank"
+                      className="no-underline inline-flex items-center justify-center px-6 py-3 bg-kaidevTeal text-warmWhite rounded-md font-medium transition-all hover:bg-kaidevTeal/90 focus:outline-none focus:ring-2 focus:ring-kaidevTeal focus:ring-offset-2 focus:ring-offset-heroColor"
+                    >
                       Schedule a Call
                     </a>
                   </p>
@@ -92,8 +98,15 @@ const ContactSection = () => {
                 <CalendarCheck className="h-6 w-6 text-kaidevTeal mr-4 flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-medium text-lg mt-0">60min Meeting - 55€</h4>
+                  <p className="text-warmWhite/80 mb-4">
+                    A focused session to plan your project's success. The <b>55€</b> booking fee will be deducted from your first invoice once we begin our collaboration.
+                  </p>
                   <p className="text-warmWhite/80">
-                    <a href="https://cal.com/kaidev/60min" target="_blank" className="text-kaidevTeal hover:underline">
+                    <a
+                      href="https://cal.com/kaidev/60min"
+                      target="_blank"
+                      className="no-underline inline-flex items-center justify-center px-6 py-3 bg-kaidevTeal text-warmWhite rounded-md font-medium transition-all hover:bg-kaidevTeal/90 focus:outline-none focus:ring-2 focus:ring-kaidevTeal focus:ring-offset-2 focus:ring-offset-heroColor"
+                    >
                       Schedule a Call
                     </a>
                   </p>
