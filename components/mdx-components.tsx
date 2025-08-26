@@ -14,7 +14,7 @@ export const CustomComponent: React.FC<CustomComponentProps> = ({ text }) => {
   );
 };
 
-export const BookAppointmentButton: React.FC<CustomComponentProps> = ({ text }) => {
+export const BookAppointmentButton: React.FC = () => {
   return (
     <div className="w-full grid justify-center my-12">
       <a
