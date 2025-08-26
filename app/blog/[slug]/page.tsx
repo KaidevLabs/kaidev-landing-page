@@ -1,4 +1,4 @@
-import { CustomComponent } from '@/components/mdx-components';
+import { BookAppointmentButton, CustomComponent } from '@/components/mdx-components';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { formatDate } from '@/lib/utils';
 import { getPostData, getAllPostSlugs } from '@/lib/blog';
@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 
 const components = {
   CustomComponent,
+  BookAppointmentButton,
 };
 
 // Generate static paths for all blog posts
@@ -35,7 +36,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
   }
 
   return (
-    <div className="container mx-auto px-4 pb-12 pt-24 max-w-4xl">
+    <div className="container mx-auto px-4 pb-12 pt-40 max-w-4xl">
       <h1 className="text-4xl font-bold mb-4 font-heading">{postData.metadata.title}</h1>
       <p className="text-sm text-muted-foreground mb-8">
         By {postData.metadata.author} on {formatDate(postData.metadata.date)}
