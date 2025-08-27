@@ -9,9 +9,7 @@ export function formatDate(dateString: string, locale?: string): string {
   const date = new Date(dateString);
 
   // fallback: use provided locale, or navigator if available, else 'en-US'
-  const lang =
-    locale ||
-    (typeof navigator !== "undefined" ? navigator.language : "en-US");
+  const lang = locale || globalThis.navigator?.language || "en-US";
 
   return date.toLocaleDateString(lang, {
     year: 'numeric',
