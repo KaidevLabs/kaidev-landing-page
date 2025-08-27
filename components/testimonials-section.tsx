@@ -69,7 +69,7 @@ const TestimonialsSection = () => {
               <p className="text-lg text-sm text-center text-graphiteCore mb-8 italic">"{testimonials[currentIndex].translation}"</p>
 
               {testimonials[currentIndex].authors.map(author => (
-                <div className="flex flex-col items-center">
+                <div key={author.name} className="flex flex-col items-center">
                   <p className="font-medium text-graphiteCore">
                     <Link href={author.url ?? ""} target="_blank">{author.name}</Link>
                   </p>
