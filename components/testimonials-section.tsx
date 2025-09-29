@@ -6,10 +6,12 @@ import Link from "next/link"
 
 const testimonials = [
   {
-    quote:
+    quote: [
       "Hem requerit en múltiples ocasions els serveis de Kaidev i podem dir que els resultats sempre han estat satisfactoris. A més, podem destacar la flexibilitat per trobar la millor solució pels nostres problemes i la capacitat d'adaptació a contextos i peticions canviants.",
-    translation:
+    ],
+    translation: [
       "We have called for Kaidev's services on many occasions and we can say that the results have always been satisfactory. In addition, we can highlight the flexibility to find the best solution for our problems and the ability to adapt to changing contexts and requests.",
+    ],
     authors: [
       {
         name: "David Ramírez Saco",
@@ -23,6 +25,29 @@ const testimonials = [
       }
     ]
   },
+  {
+    quote: [
+      "Quiero darle las gracias a Jaime, y a su equipo por la forma en la que han trabajado en este proyecto. Desde el principio han sabido orientar el desarrollo de manera eficiente, distribuyendo los recursos con inteligencia y guiando cada tarea para que todo quedara bien cubierto.",
+      "He aprendido mucho con vosotros, especialmente a priorizar lo más importante semana a semana con el método Scrum, lo que nos ha permitido avanzar con claridad y mantener un buen ritmo de trabajo.",
+      "El conocimiento senior que aportas, no solo como full stack developer sino como un apasionado de la programación optimizada, se refleja en cada detalle. Esa visión de constante aprendizaje y búsqueda de la perfección se transmite también al equipo, y se nota en los resultados.",
+      "Gracias por la implicación, la profesionalidad y el compromiso que demostráis.",
+      "Siento que con el equipo podemos crear y desarrollar proyectos de cualquier envergadura. Es un verdadero placer trabajar con vosotros.",
+    ],
+    translation: [
+      "I want to thank you, Jaime, and your team for the way you all have worked on this project. From the beginning, you knew how to guide the development efficiently, allocating resources intelligently and steering each task so that everything was well covered.",
+      "I have learned a lot from you, especially how to prioritize what's most important week by week with the Scrum method, which allowed us to advance with clarity and maintain a good pace of work.",
+      "The senior knowledge you bring, not only as a full stack developer but as someone passionate about optimized programming, is reflected in every detail. That vision of constant learning and the search for perfection is also transmitted to the team, and it shows in the results.",
+      "Thank you for the involvement, professionalism, and commitment you demonstrate.",
+      "I feel that with this team we can create and develop projects of any scale. It is a true pleasure to work with all of you.",
+    ],
+    authors: [
+      {
+        name: "Arkady Grigoryan Melikstyan",
+        position: "CEO @ AGILE REGISTRATIONS PTY LTD",
+        url: "https://abn-register.com.au/"
+      },
+    ]
+   },
   // {
   //   quote:
   //     "Working with Kaidev has been a game-changer for our development process. Their focus on continuous improvement aligned perfectly with our company values.",
@@ -65,9 +90,21 @@ const TestimonialsSection = () => {
             </div>
 
             <div className="relative z-10">
-              <p className="text-lg md:text-xl mb-8 italic ">"{testimonials[currentIndex].quote}"</p>
-              <p className="text-lg text-sm text-center text-graphiteCore mb-8 italic">"{testimonials[currentIndex].translation}"</p>
-
+              <div className="flex flex-col gap-3 mb-8">
+                {testimonials[currentIndex].quote.map((part, index) => (
+                  <p key={index} className="text-lg md:text-xl text-center italic">
+                    {part}
+                  </p>
+                ))}
+              </div>
+              <div className="flex flex-col gap-2 mb-8">
+                {testimonials[currentIndex].translation.map((part, index) => (
+                  <p key={index} className="text-lg text-sm text-center text-graphiteCore italic">
+                    {part}
+                  </p>
+                ))}
+              </div>
+              <div className="flex flex-col gap-3">
               {testimonials[currentIndex].authors.map(author => (
                 <div key={author.name} className="flex flex-col items-center">
                   <p className="font-medium text-graphiteCore">
@@ -76,6 +113,7 @@ const TestimonialsSection = () => {
                   <p className="text-sm text-graphiteCore/70">{author.position}</p>
                 </div>
               ))}
+            </div>
             </div>
 
             <div className="flex justify-center mt-8 space-x-4">
