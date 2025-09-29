@@ -1,6 +1,6 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Network, Zap, ShieldCheck, GitBranchPlus, Workflow, BrainCircuit } from "lucide-react"
-import { Button } from "./ui/button"
+import { BookAppointmentButton } from "./ui/book-appointment-button"
 
 const servicesByCat = [
   {
@@ -129,9 +129,7 @@ const ServicesSection = () => {
             Let's discuss how we can apply our expertise to solve your most complex challenges and create a lasting
             competitive advantage.
           </p>
-          <Button size="lg" className="font-semibold">
-            Schedule a Consultation
-          </Button>
+          <BookAppointmentButton />
         </div>
       </div>
     </section>

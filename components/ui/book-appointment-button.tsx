@@ -7,7 +7,7 @@ export const BookAppointmentButton = () => {
       href="https://cal.com/kaidev/45min-strategy-call"
       target="_blank"
       className="no-underline inline-flex items-center justify-center px-6 py-5
-      bg-kaidevTeal text-warmWhite rounded-md font-medium transition-all
+      bg-kaidevTeal text-left text-warmWhite rounded-md font-medium transition-all
       hover:bg-kaidevTeal/90 focus:outline-none focus:ring-2 focus:ring-kaidevTeal
       focus:ring-offset-2 focus:ring-offset-heroColor max-w-lg"
     >
