@@ -1,4 +1,5 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { Network, Zap, ShieldCheck, GitBranchPlus, Workflow, BrainCircuit } from "lucide-react"
 import { Button } from "./ui/button"
 
 const servicesByCat = [
@@ -12,12 +13,14 @@ const servicesByCat = [
       {
         id: "S1",
         title: "Complex System Architecture <span class='text-kaidevTeal'>&</span> Development",
+        icon: <Network className="w-6 h-6 text-kaidevTeal" />,
         description:
           "We architect and engineer high-performance solutions for mission-critical enterprise workflows. Our focus is on creating scalable, resilient, and strategically aligned systems that master complexity in demanding industrial and financial environments. By translating intricate business logic into robust, maintainable code, we deliver a lasting competitive advantage, ensuring your technology core is not just a utility, but a powerful engine for growth and innovation.",
       },
       {
         id: "S3",
         title: "Strategic Technology <span class='text-kaidevTeal'>&</span> Architecture Advisory",
+        icon: <ShieldCheck className="w-6 h-6 text-kaidevTeal" />,
         description:
           "We provide executive-level guidance to navigate critical technology decisions and de-risk complex modernization initiatives. Our advisory services focus on creating actionable roadmaps, designing resilient event-driven architectures, and aligning technology strategy with core business objectives. We empower leadership with the clarity and confidence needed to invest in the right platforms, eliminate architectural fragility, and build a technology ecosystem that is prepared for future opportunities and challenges.",
       },
@@ -33,12 +36,14 @@ const servicesByCat = [
       {
         id: "S2",
         title: "Performance <span class='text-kaidevTeal'>&</span> Codebase Optimization",
+        icon: <Zap className="w-6 h-6 text-kaidevTeal" />,
         description:
           "We systematically dismantle technical debt and performance bottlenecks within your critical applications. Our process involves deep architectural analysis, strategic refactoring, and targeted optimizations to enhance speed, security, and maintainability. We restore agility to your development lifecycle, reduce operational risk, and ensure your systems can scale to meet future market demands. The result is a revitalized, high-performance codebase that is both reliable and cost-effective to own.",
       },
       {
         id: "S4",
         title: "High-Risk Legacy System Transformation",
+        icon: <GitBranchPlus className="w-6 h-6 text-kaidevTeal" />,
         description:
           "We specialize in modernizing fragile, outdated enterprise systems while safeguarding decades of invaluable business logic. Our structured transformation process mitigates risk by systematically extracting and rebuilding core functionalities into a modern, adaptable architecture. We eliminate dependency on unsupported technologies, restore operational stability, and unlock new capabilities for integration and growth. This strategic intervention turns a high-risk liability into a resilient, future-proof asset.",
       },
@@ -54,12 +59,14 @@ const servicesByCat = [
       {
         id: "S5",
         title: "Business Process Automation (BPA)",
+        icon: <Workflow className="w-6 h-6 text-kaidevTeal" />,
         description:
           "We engineer sophisticated automation solutions that streamline complex, repetitive enterprise workflows. By building custom automation layers and integrating intelligent systems, we eliminate manual errors, accelerate operational cycles, and free up high-value resources. Our focus is on mastering intricate business rules and creating seamless, resilient automation for processes in finance, logistics, and compliance. We turn operational friction into a source of efficiency, reliability, and competitive advantage.",
       },
       {
         id: "S6",
         title: "Data Mining <span class='text-kaidevTeal'>&</span> Custom ML Model Integration",
+        icon: <BrainCircuit className="w-6 h-6 text-kaidevTeal" />,
         description:
           "We unlock the immense value hidden within your enterprise data. Our expertise lies in advanced feature extraction, predictive analytics, and the seamless integration of custom-trained machine learning models into your core applications. We transform raw data into a strategic asset, enabling data-driven decision-making, predictive operational insights, and new intelligent features. From identifying optimization opportunities to predicting market trends, we empower your systems with the intelligence to innovate and lead.",
       },
@@ -92,7 +99,10 @@ const ServicesSection = () => {
                   {category.services.map(service => (
                     <AccordionItem key={service.id} value={service.id}>
                       <AccordionTrigger className="font-semibold text-left hover:text-kaidevTeal">
+                      <div className="mr-3 flex items-center justify-center gap-2">
+                        {service.icon}
                         <span dangerouslySetInnerHTML={{__html: service.title}}></span>
+                      </div>
                       </AccordionTrigger>
                       <AccordionContent className="text-graphiteCore/90">
                         <span dangerouslySetInnerHTML={{__html: service.description}}></span>
