@@ -1,4 +1,5 @@
 import Image from "next/image"
+import {BookAppointmentButton} from "./ui/book-appointment-button"
 
 const HeroSection = () => {
   return (
@@ -23,19 +24,7 @@ const HeroSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="https://cal.com/kaidev/60min"
-                className="inline-flex items-center justify-center px-6 py-3 bg-kaidevTeal text-warmWhite rounded-md font-medium transition-all hover:bg-kaidevTeal/90 focus:outline-none focus:ring-2 focus:ring-kaidevTeal focus:ring-offset-2 focus:ring-offset-heroColor"
-              >
-                <div className="flex flex-col">
-                  <p className="font-bold">
-                    Book Your 60-Minute Strategy Call - 55€
-                  </p>
-                  <p className="text-sm">
-                    Fee deducted from your first invoice.
-                  </p>
-                </div>
-              </a>
+              <BookAppointmentButton />
               <a
                 href="#services"
                 className="inline-flex items-center justify-center px-6 py-3 border border-warmWhite/30 text-warmWhite rounded-md font-medium transition-all hover:bg-warmWhite/10 focus:outline-none focus:ring-2 focus:ring-warmWhite focus:ring-offset-2 focus:ring-offset-heroColor"
