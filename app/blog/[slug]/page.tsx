@@ -1,4 +1,4 @@
-import { BookAppointmentButton, CustomComponent } from '@/components/mdx-components';
+import { BookAppointmentButtonMDX, CustomComponent } from '@/components/mdx-components';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { formatDate } from '@/lib/utils';
 import { getPostData, getAllPostSlugs } from '@/lib/blog';
@@ -6,7 +6,7 @@ import { notFound } from 'next/navigation';
 
 const components = {
   CustomComponent,
-  BookAppointmentButton,
+  BookAppointmentButtonMDX,
 };
 
 // Generate static paths for all blog posts
