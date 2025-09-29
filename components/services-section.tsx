@@ -112,7 +112,7 @@ const ServicesSection = () => {
                 </Accordion>
               </div>
               <div className="bg-softPaper rounded-lg p-2 flex items-center justify-center lg:h-auto">
-                <img src={category.imagePath} alt={category.imageAlt} className="rounded-lg object-fit" />
+                <img src={category.imagePath} alt={category.imageAlt} className="rounded-lg object-cover" />
               </div>
             </div>
           ))}
