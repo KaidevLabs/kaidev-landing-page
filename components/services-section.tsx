@@ -1,30 +1,48 @@
-import { Code, RefreshCw, Cpu, GitMerge } from "lucide-react"
+import { Network, Zap, ShieldCheck, GitBranchPlus, Workflow, BrainCircuit } from "lucide-react"
 
 const ServicesSection = () => {
   const services = [
     {
-      icon: <Code className="h-12 w-12 text-kaidevTeal" />,
-      title: "Custom Software Development",
+      id: "S1",
+      icon: <Network className="h-12 w-12 text-kaidevTeal" />,
+      title: "Complex System Architecture & Development",
       description:
-        "We create innovative, tailored software solutions that address your specific business challenges and objectives, using modern technologies and best practices.",
+        "We architect and engineer high-performance, bespoke Laravel/PHP solutions for mission-critical enterprise workflows. Our focus is on creating scalable, resilient, and strategically aligned systems that master complexity in demanding industrial and financial environments. By translating intricate business logic into robust, maintainable code, we deliver a lasting competitive advantage, ensuring your technology core is not just a utility, but a powerful engine for growth and innovation.",
     },
     {
-      icon: <RefreshCw className="h-12 w-12 text-kaidevTeal" />,
-      title: "Code Refactoring",
+      id: "S2",
+      icon: <Zap className="h-12 w-12 text-kaidevTeal" />,
+      title: "Performance & Codebase Optimization",
       description:
-        "We optimize and improve existing code structures, enhancing performance, maintainability, and scalability without changing external behavior.",
+        "We systematically dismantle technical debt and performance bottlenecks within your critical PHP/Laravel applications. Our process involves deep architectural analysis, strategic refactoring, and targeted optimizations to enhance speed, security, and maintainability. We restore agility to your development lifecycle, reduce operational risk, and ensure your systems can scale to meet future market demands. The result is a revitalized, high-performance codebase that is both reliable and cost-effective to own.",
     },
     {
-      icon: <Cpu className="h-12 w-12 text-kaidevTeal" />,
-      title: "Technical Consulting",
+      id: "S3",
+      icon: <ShieldCheck className="h-12 w-12 text-kaidevTeal" />,
+      title: "Strategic Technology & Architecture Advisory",
       description:
-        "Our expert team provides strategic guidance on technology decisions, architecture design, and implementation strategies to ensure optimal outcomes.",
+        "We provide executive-level guidance to navigate critical technology decisions and de-risk complex modernization initiatives. Our advisory services focus on creating actionable roadmaps, designing resilient event-driven architectures, and aligning technology strategy with core business objectives. We empower leadership with the clarity and confidence needed to invest in the right platforms, eliminate architectural fragility, and build a technology ecosystem that is prepared for future opportunities and challenges.",
     },
     {
-      icon: <GitMerge className="h-12 w-12 text-kaidevTeal" />,
-      title: "Legacy System Modernization",
+      id: "S4",
+      icon: <GitBranchPlus className="h-12 w-12 text-kaidevTeal" />,
+      title: "High-Risk Legacy System Transformation",
       description:
-        "We transform outdated systems into modern, efficient applications that leverage current technologies while preserving valuable business logic.",
+        "We specialize in modernizing fragile, outdated enterprise systems while safeguarding decades of invaluable business logic. Our structured transformation process mitigates risk by systematically extracting and rebuilding core functionalities into a modern, adaptable architecture. We eliminate dependency on unsupported technologies, restore operational stability, and unlock new capabilities for integration and growth. This strategic intervention turns a high-risk liability into a resilient, future-proof asset.",
+    },
+    {
+      id: "S5",
+      icon: <Workflow className="h-12 w-12 text-kaidevTeal" />,
+      title: "Business Process Automation (BPA)",
+      description:
+        "We engineer sophisticated automation solutions that streamline complex, repetitive enterprise workflows. By building custom automation layers and integrating intelligent systems, we eliminate manual errors, accelerate operational cycles, and free up high-value resources. Our focus is on mastering intricate business rules and creating seamless, resilient automation for processes in finance, logistics, and compliance. We turn operational friction into a source of efficiency, reliability, and competitive advantage.",
+    },
+    {
+      id: "S6",
+      icon: <BrainCircuit className="h-12 w-12 text-kaidevTeal" />,
+      title: "Data Mining & Custom ML Model Integration",
+      description:
+        "We unlock the immense value hidden within your enterprise data. Our expertise lies in advanced feature extraction, predictive analytics, and the seamless integration of custom-trained machine learning models into your core applications. We transform raw data into a strategic asset, enabling data-driven decision-making, predictive operational insights, and new intelligent features. From identifying optimization opportunities to predicting market trends, we empower your systems with the intelligence to innovate and lead.",
     },
   ]
 
@@ -42,15 +60,15 @@ const ServicesSection = () => {
           <div className="w-20 h-1 bg-kaidevTeal mx-auto mt-6"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-          {services.map((service, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+          {services.map(service => (
             <div
-              key={index}
-              className="bg-softPaper p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+              key={service.id}
+              className="bg-softPaper p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col"
             >
               <div className="mb-6">{service.icon}</div>
               <h3 className="font-heading font-medium text-xl mb-4 text-graphiteCore">{service.title}</h3>
-              <p className="text-graphiteCore/80">{service.description}</p>
+              <p className="text-graphiteCore/80 flex-grow">{service.description}</p>
             </div>
           ))}
         </div>
