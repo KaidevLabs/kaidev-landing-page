@@ -4,6 +4,7 @@ import type React from "react"
 
 import { useState } from "react"
 import { Mail, Phone, Send, CalendarCheck } from "lucide-react"
+import {BookAppointmentButton} from "./ui/book-appointment-button"
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -56,71 +57,20 @@ const ContactSection = () => {
           <h2 className="font-heading font-semibold text-3xl sm:text-4xl md:text-5xl mb-4">
             Get in <span className="text-kaidevTeal">Touch</span>
           </h2>
-          <p className="text-lg text-warmWhite/80 max-w-2xl mx-auto">
-            Ready to evolve your software? Contact us to discuss how we can help improve your digital products.
-          </p>
           <div className="w-20 h-1 bg-kaidevTeal mx-auto mt-6"></div>
         </div>
 
-        <div>
+        <div className="text-center">
           <div className="prose prose-lg max-w-none text-warmWhite prose-headings:text-warmWhite prose-p:text-warmWhite/80">
-            <h3 className="font-heading font-medium text-2xl mb-6">Contact Information</h3>
-
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-              <div className="flex items-start">
-                <Mail className="h-6 w-6 text-kaidevTeal mr-4 flex-shrink-0 mt-1" />
-                <div>
-                  <h4 className="font-medium text-lg mt-0">Email</h4>
-                  <a href="mailto:info@kaidev.io" className="text-warmWhite/80">info@kaidev.io</a>
-                </div>
-              </div>
-
-              <div className="flex items-start">
-                <CalendarCheck className="h-6 w-6 text-kaidevTeal mr-4 flex-shrink-0 mt-1" />
-                <div>
-                  <h4 className="font-medium text-lg mt-0">15min Call - Free</h4>
-                  <p className="text-warmWhite/80 mb-4">
-                    Let’s explore how we can help you and your business.
-                  </p>
-                  <p className="text-warmWhite/80">
-                    <a
-                      href="https://cal.com/kaidev/15min"
-                      target="_blank"
-                      className="no-underline inline-flex items-center justify-center px-6 py-3 bg-kaidevTeal text-warmWhite rounded-md font-medium transition-all hover:bg-kaidevTeal/90 focus:outline-none focus:ring-2 focus:ring-kaidevTeal focus:ring-offset-2 focus:ring-offset-heroColor"
-                    >
-                      Schedule a Call
-                    </a>
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start">
-                <CalendarCheck className="h-6 w-6 text-kaidevTeal mr-4 flex-shrink-0 mt-1" />
-                <div>
-                  <h4 className="font-medium text-lg mt-0">60min Meeting - 55€</h4>
-                  <p className="text-warmWhite/80 mb-4">
-                    A focused session to plan your project's success. The <b>55€</b> booking fee will be deducted from your first invoice once we begin our collaboration.
-                  </p>
-                  <p className="text-warmWhite/80">
-                    <a
-                      href="https://cal.com/kaidev/60min"
-                      target="_blank"
-                      className="no-underline inline-flex items-center justify-center px-6 py-3 bg-kaidevTeal text-warmWhite rounded-md font-medium transition-all hover:bg-kaidevTeal/90 focus:outline-none focus:ring-2 focus:ring-kaidevTeal focus:ring-offset-2 focus:ring-offset-heroColor"
-                    >
-                      Schedule a Call
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-
             <div className="mt-12">
-              <h3 className="font-heading font-medium text-2xl mb-6">Let's Connect</h3>
+              <p>
+                Ready to evolve your software? Contact us to discuss how we can help improve your digital products.
+              </p>
               <p>
                 Whether you're looking to build a new software solution, improve an existing one, or simply want to
                 discuss how we can help your business, we're here to help.
               </p>
-              <p>Fill out the form, and our team will get back to you within 24 hours.</p>
+              <BookAppointmentButton />
             </div>
           </div>
         </div>
