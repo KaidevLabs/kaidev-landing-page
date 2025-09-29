@@ -4,6 +4,7 @@ import { Button } from "./ui/button"
 
 const servicesByCat = [
   {
+    id: "C1",
     categoryTitle: "Foundation <span class='text-kaidevTeal'>&</span> Scale",
     categoryDescription:
       "We engineer robust, custom platforms and provide the strategic direction needed to stabilize and future-proof your core technology stack.",
@@ -27,6 +28,7 @@ const servicesByCat = [
     ],
   },
   {
+    id: "C2",
     categoryTitle: "Optimization <span class='text-kaidevTeal'>&</span> Health",
     categoryDescription:
       "Systematically eliminate technical debt, resolve critical performance bottlenecks, and modernize brittle legacy systems to ensure stability and control.",
@@ -50,6 +52,7 @@ const servicesByCat = [
     ],
   },
   {
+    id: "C3",
     categoryTitle: "Future-Proofing <span class='text-kaidevTeal'>&</span> Intelligence",
     categoryDescription:
       "Integrate advanced automation, custom machine learning models, and data pipelines to unlock new efficiencies and competitive insights.",
@@ -91,7 +94,7 @@ const ServicesSection = () => {
 
         <div className="space-y-16">
           {servicesByCat.map(category => (
-            <div key={category.categoryTitle} className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div key={category.id} className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="lg:pr-8">
                 <h3 className="font-heading font-bold text-2xl text-graphiteCore mb-3" dangerouslySetInnerHTML={{__html: category.categoryTitle}}></h3>
                 <p className="text-graphiteCore/80 mb-6" dangerouslySetInnerHTML={{__html: category.categoryDescription}}></p>
