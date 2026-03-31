@@ -8,8 +8,8 @@ A modern, responsive landing page for Kaidev, a consultancy specializing in soft
 
 This project leverages the following technologies:
 
-- **[Next.js 14](https://nextjs.org/)** - React framework with App Router
-- **[React 18](https://reactjs.org/)** - JavaScript library for building user interfaces
+- **[Next.js 16](https://nextjs.org/)** - React framework with App Router
+- **[React 19](https://reactjs.org/)** - JavaScript library for building user interfaces
 - **[TypeScript](https://www.typescriptlang.org/)** - Typed JavaScript
 - **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
 - **[Lucide React](https://lucide.dev/)** - Beautiful & consistent icon set
@@ -19,8 +19,8 @@ This project leverages the following technologies:
 
 Before you begin, ensure you have the following installed:
 
-- Node.js (v18.17.0 or higher)
-- npm or yarn or pnpm
+- Node.js (v20.9.0 or higher)
+- npm or yarn
 
 ## 🛠️ Getting Started
 
@@ -41,10 +41,6 @@ npm install
 # or
 
 yarn install
-
-# or
-
-pnpm install
 ```
 
 3. **Run the development server**
@@ -55,10 +51,6 @@ npm run dev
 # or
 
 yarn dev
-
-# or
-
-pnpm dev
 ```
 
 4. **Open your browser**
@@ -172,10 +164,6 @@ npm run build
 # or
 
 yarn build
-
-# or
-
-pnpm build
 ```
 
 To preview the production build:
@@ -186,10 +174,6 @@ npm run start
 # or
 
 yarn start
-
-# or
-
-pnpm start
 ```
 
 ## 🚀 Deployment
