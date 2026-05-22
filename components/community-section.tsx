@@ -19,7 +19,7 @@ const CommunitySection = () => {
           <div className="flex flex-col items-center gap-8 text-center">
             <Image
               src="/images/laravel-catalunya.svg"
-              alt="Laravel Catalunya"
+              alt=""
               width={280}
               height={88}
               className="h-auto w-full max-w-[280px]"
