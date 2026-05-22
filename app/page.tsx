@@ -3,6 +3,7 @@ import AboutSection from "@/components/about-section"
 import ServicesSection from "@/components/services-section"
 import PhilosophySection from "@/components/philosophy-section"
 import TestimonialsSection from "@/components/testimonials-section"
+import CommunitySection from "@/components/community-section"
 import ContactSection from "@/components/contact-section"
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <ServicesSection />
       <PhilosophySection />
       <TestimonialsSection />
+      <CommunitySection />
       <ContactSection />
     </>
   )
