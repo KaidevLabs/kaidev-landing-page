@@ -40,7 +40,7 @@ export default function RootLayout({
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />
-        <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+        <script defer src="https://umami.kaidev.io/script.js" data-website-id="e02e6171-142b-4c3b-96fb-b30c26fd00a0"></script>
       </body>
     </html>
   )
