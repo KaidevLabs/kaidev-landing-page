@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
-            <Link href="#home" className="inline-block mb-6">
+            <Link href="/#inicio" className="inline-block mb-6">
               <Image
                 src="/images/logo_horizontal_flat_color_dark_bg.svg"
                 alt="Kaidev Logo"
@@ -20,8 +20,7 @@ const Footer = () => {
               />
             </Link>
             <p className="mb-6 max-w-md">
-              Consultancy specializing in software development and code refactoring, inspired by the Japanese philosophy
-              of Kaizen - continuous improvement.
+              Consultora de ingeniería de software especializada en eficiencia en IA. Ayudamos a las empresas a obtener más trabajo útil de las herramientas que ya pagan, con medición, control de costes y seguridad.
             </p>
             <div className="flex space-x-4 inline-block align-middle">
               <a
@@ -58,44 +57,45 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex text-warmWhite/70 hover:text-kaidevTeal transition-colors flex justify-center items-center"
-                aria-label="BlueSky"
+                aria-label="Email"
               >
                 <Mail />&nbsp;info@kaidev.io
               </a>
             </div>
+            <p className="mt-6 text-sm">Miembros de la comunidad Laravel Catalunya</p>
           </div>
 
           <div>
-            <h3 className="font-heading font-medium text-lg mb-4 text-warmWhite">Quick Links</h3>
+            <h3 className="font-heading font-medium text-lg mb-4 text-warmWhite">Enlaces</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/#home" className="text-warmWhite/70 hover:text-kaidevTeal transition-colors">
-                  Home
+                <Link href="/#inicio" className="text-warmWhite/70 hover:text-kaidevTeal transition-colors">
+                  Inicio
                 </Link>
               </li>
               <li>
-                <Link href="/#about" className="text-warmWhite/70 hover:text-kaidevTeal transition-colors">
-                  About Us
+                <Link href="/#servicios" className="text-warmWhite/70 hover:text-kaidevTeal transition-colors">
+                  Servicios
                 </Link>
               </li>
               <li>
-                <Link href="/#services" className="text-warmWhite/70 hover:text-kaidevTeal transition-colors">
-                  Services
+                <Link href="/#experiencia" className="text-warmWhite/70 hover:text-kaidevTeal transition-colors">
+                  Experiencia
                 </Link>
               </li>
               <li>
-                <Link href="/#philosophy" className="text-warmWhite/70 hover:text-kaidevTeal transition-colors">
-                  Philosophy
+                <Link href="/#medicion" className="text-warmWhite/70 hover:text-kaidevTeal transition-colors">
+                  Medición
                 </Link>
               </li>
               <li>
-                <Link href="/#testimonials" className="text-warmWhite/70 hover:text-kaidevTeal transition-colors">
-                  Testimonials
+                <Link href="/#testimonios" className="text-warmWhite/70 hover:text-kaidevTeal transition-colors">
+                  Testimonios
                 </Link>
               </li>
               <li>
-                <Link href="/#contact" className="text-warmWhite/70 hover:text-kaidevTeal transition-colors">
-                  Contact
+                <Link href="/#contacto" className="text-warmWhite/70 hover:text-kaidevTeal transition-colors">
+                  Contacto
                 </Link>
               </li>
             </ul>

@@ -34,12 +34,11 @@ const Navbar = () => {
   }
 
   const navLinks = [
-    { name: "Home", href: "/#home" },
-    { name: "About Us", href: "/#about" },
-    { name: "Services", href: "/#services" },
-    { name: "Philosophy", href: "/#philosophy" },
-    { name: "Testimonials", href: "/#testimonials" },
-    { name: "Contact", href: "/#contact" },
+    { name: "Servicios", href: "/#servicios" },
+    { name: "Experiencia", href: "/#experiencia" },
+    { name: "Medición", href: "/#medicion" },
+    { name: "Testimonios", href: "/#testimonios" },
+    { name: "Contacto", href: "/#contacto" },
     { name: "Blog", href: "/blog" },
   ]
 

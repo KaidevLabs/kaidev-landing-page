@@ -13,8 +13,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Kaidev | Software Development & Code Refactoring",
-  description: "Consultancy specializing in software development and code refactoring, inspired by the Japanese philosophy of Kaizen (continuous improvement).",
+  title: "Kaidev | Eficiencia en IA para empresas",
+  description: "Consultora de ingeniería especializada en eficiencia en IA. Ayudamos a las empresas a obtener más trabajo útil de las herramientas que ya pagan, con medición, control de costes y seguridad.",
 }
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="es" className="scroll-smooth">
       <head>
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"

@@ -1,20 +1,22 @@
 import HeroSection from "@/components/hero-section"
-import AboutSection from "@/components/about-section"
+import ProblemSection from "@/components/problem-section"
+import WasteSignalsSection from "@/components/waste-signals-section"
 import ServicesSection from "@/components/services-section"
-import PhilosophySection from "@/components/philosophy-section"
+import InternalExperienceSection from "@/components/internal-experience-section"
+import MeasurementSection from "@/components/measurement-section"
 import TestimonialsSection from "@/components/testimonials-section"
-import CommunitySection from "@/components/community-section"
 import ContactSection from "@/components/contact-section"
 
 export default function Home() {
   return (
     <>
       <HeroSection />
-      <AboutSection />
+      <ProblemSection />
+      <WasteSignalsSection />
       <ServicesSection />
-      <PhilosophySection />
+      <InternalExperienceSection />
+      <MeasurementSection />
       <TestimonialsSection />
-      <CommunitySection />
       <ContactSection />
     </>
   )

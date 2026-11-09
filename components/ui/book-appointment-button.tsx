@@ -14,13 +14,12 @@ export const BookAppointmentButton = () => {
       <div className="flex flex-col gap-2">
         <div className="flex font-bold inline-block align-middle gap-2">
           <CalendarCheck className="h-6 w-6" />
-          Schedule 30-Min Alignment Call
+          Reservar llamada de 15 minutos
         </div>
         <div className="text-sm/4">
-          This is a complimentary, zero-pressure conversation with our senior strategists.
+          Conversación gratuita de 15 minutos para ver si hay una oportunidad real.
         </div>
       </div>
     </a>
   );
 };
-

@@ -10,7 +10,7 @@ const testimonials = [
       "Hem requerit en múltiples ocasions els serveis de Kaidev i podem dir que els resultats sempre han estat satisfactoris. A més, podem destacar la flexibilitat per trobar la millor solució pels nostres problemes i la capacitat d'adaptació a contextos i peticions canviants.",
     ],
     translation: [
-      "We have called for Kaidev's services on many occasions and we can say that the results have always been satisfactory. In addition, we can highlight the flexibility to find the best solution for our problems and the ability to adapt to changing contexts and requests.",
+      "En múltiples ocasiones hemos requerido los servicios de Kaidev y podemos decir que los resultados siempre han sido satisfactorios. Además, destacamos la flexibilidad para encontrar la mejor solución a nuestros problemas y la capacidad de adaptación a contextos y peticiones cambiantes.",
     ],
     authors: [
       {
@@ -33,13 +33,7 @@ const testimonials = [
       "Gracias por la implicación, la profesionalidad y el compromiso que demostráis.",
       "Siento que con el equipo podemos crear y desarrollar proyectos de cualquier envergadura. Es un verdadero placer trabajar con vosotros.",
     ],
-    translation: [
-      "I want to thank you, Jaime, and your team for the way you all have worked on this project. From the beginning, you knew how to guide the development efficiently, allocating resources intelligently and steering each task so that everything was well covered.",
-      "I have learned a lot from you, especially how to prioritize what's most important week by week with the Scrum method, which allowed us to advance with clarity and maintain a good pace of work.",
-      "The senior knowledge you bring, not only as a full stack developer but as someone passionate about optimized programming, is reflected in every detail. That vision of constant learning and the search for perfection is also transmitted to the team, and it shows in the results.",
-      "Thank you for the involvement, professionalism, and commitment you demonstrate.",
-      "I feel that with this team we can create and develop projects of any scale. It is a true pleasure to work with all of you.",
-    ],
+    translation: [],
     authors: [
       {
         name: "Arkady Grigoryan Melikstyan",
@@ -74,11 +68,11 @@ const TestimonialsSection = () => {
   }
 
   return (
-    <section id="testimonials" className="py-20 bg-softPaper">
+    <section id="testimonios" className="py-20 bg-softPaper">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-heading font-semibold text-3xl sm:text-4xl md:text-5xl text-graphiteCore mb-4">
-            Client <span className="text-kaidevTeal">Testimonials</span>
+            Lo que dicen <span className="text-kaidevTeal">nuestros clientes</span>
           </h2>
           <div className="w-20 h-1 bg-kaidevTeal mx-auto"></div>
         </div>
@@ -97,13 +91,15 @@ const TestimonialsSection = () => {
                   </p>
                 ))}
               </div>
-              <div className="flex flex-col gap-2 mb-8">
-                {testimonials[currentIndex].translation.map((part, index) => (
-                  <p key={index} className="text-lg text-sm text-center text-graphiteCore italic">
-                    {part}
-                  </p>
-                ))}
-              </div>
+              {testimonials[currentIndex].translation.length > 0 && (
+                <div className="flex flex-col gap-2 mb-8">
+                  {testimonials[currentIndex].translation.map((part, index) => (
+                    <p key={index} className="text-lg text-sm text-center text-graphiteCore italic">
+                      {part}
+                    </p>
+                  ))}
+                </div>
+              )}
               <div className="flex flex-col gap-3">
               {testimonials[currentIndex].authors.map(author => (
                 <div key={author.name} className="flex flex-col items-center">

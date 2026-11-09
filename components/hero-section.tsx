@@ -3,7 +3,7 @@ import {BookAppointmentButton} from "./ui/book-appointment-button"
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center bg-heroColor text-warmWhite pt-20">
+    <section id="inicio" className="relative min-h-screen flex items-center bg-heroColor text-warmWhite pt-20">
       <div className="absolute inset-0 z-0 opacity-10">
         <div className="h-full w-full bg-gradient-to-br from-kaidevGradientFrom to-kaidevGradientTo" />
       </div>
@@ -13,23 +13,21 @@ const HeroSection = () => {
           <div className="space-y-8">
             <div>
               <h1 className="font-heading font-bold text-4xl sm:text-5xl md:text-6xl leading-tight mb-6">
-                Evolve Your Software <br />
-                <span className="text-kaidevTeal">With Purpose</span>
+                Convierte la IA en una <br />
+                <span className="text-kaidevTeal">ventaja operativa real</span>
               </h1>
               <p className="text-lg md:text-xl mb-8 max-w-2xl text-warmWhite/90">
-                Get Performance and Automation you can rely on. We engineer
-                high-value software solutions that turn your biggest technical challenges
-                into your greatest competitive advantages.
+                Más trabajo útil. Menos gasto innecesario. Los mismos estándares de ingeniería. Ayudamos a las empresas a mejorar cómo sus equipos utilizan la IA: flujos de trabajo, herramientas, costes y procesos de ingeniería, sin comprometer la calidad ni la seguridad.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <BookAppointmentButton />
               <a
-                href="#services"
+                href="#servicios"
                 className="inline-flex items-center justify-center px-6 py-3 border border-warmWhite/30 text-warmWhite rounded-md font-medium transition-all hover:bg-warmWhite/10 focus:outline-none focus:ring-2 focus:ring-warmWhite focus:ring-offset-2 focus:ring-offset-heroColor"
               >
-                Discover Our Services
+                Ver los servicios
               </a>
             </div>
           </div>
@@ -48,7 +46,7 @@ const HeroSection = () => {
       </div>
 
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <a href="#about" aria-label="Scroll down">
+        <a href="#problema" aria-label="Scroll down">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
