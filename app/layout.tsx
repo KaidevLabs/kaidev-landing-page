@@ -1,6 +1,6 @@
 import type React from 'react';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Space_Grotesk } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
@@ -10,6 +10,12 @@ const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-inter',
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-space-grotesk',
 });
 
 export const metadata: Metadata = {
@@ -24,20 +30,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className="scroll-smooth">
+    <html lang="es" className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-        {/* Custom font for headings - using Google Fonts version of Overused Grotesk as alternative */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
         <link rel="icon" href="/favicon_Kaidev.svg" sizes="any" />
       </head>
-      <body className={`${inter.variable} bg-softPaper font-sans`}>
+      <body className="bg-canvas font-sans text-ink">
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />

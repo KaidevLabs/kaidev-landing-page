@@ -15,7 +15,7 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           <div className="space-y-8">
             <div>
-              <h1 className="font-heading mb-6 text-4xl leading-tight font-bold sm:text-5xl md:text-6xl">
+              <h1 className="mb-6 font-heading text-4xl leading-tight font-bold sm:text-5xl md:text-6xl">
                 Convierte la IA en una <br />
                 <span className="text-kaidevTeal">ventaja operativa real</span>
               </h1>

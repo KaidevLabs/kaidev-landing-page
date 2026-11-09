@@ -6,7 +6,7 @@ const InternalExperienceSection = () => {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
-          <h2 className="font-heading mb-4 text-3xl font-semibold sm:text-4xl md:text-5xl">
+          <h2 className="mb-4 font-heading text-3xl font-semibold sm:text-4xl md:text-5xl">
             Lo aplicamos en casa{' '}
             <span className="text-warmWhite">antes de venderlo</span>
           </h2>

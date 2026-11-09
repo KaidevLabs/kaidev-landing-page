@@ -8,13 +8,13 @@ export const metadata: Metadata = {
 export default function TermsOfService() {
   return (
     <div className="container mx-auto max-w-4xl px-4 pt-24 pb-12">
-      <h1 className="font-heading mb-8 text-4xl font-bold">Terms of Service</h1>
+      <h1 className="mb-8 font-heading text-4xl font-bold">Terms of Service</h1>
 
       <p className="mb-6 text-lg">Last updated: May 13, 2025</p>
 
       <div className="space-y-8">
         <section>
-          <h2 className="font-heading mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 font-heading text-2xl font-semibold">
             1. Acceptance of Terms
           </h2>
           <p className="mb-4">
@@ -32,7 +32,7 @@ export default function TermsOfService() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 font-heading text-2xl font-semibold">
             2. Description of Service
           </h2>
           <p className="mb-4">
@@ -49,7 +49,7 @@ export default function TermsOfService() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 font-heading text-2xl font-semibold">
             3. Intellectual Property
           </h2>
           <p className="mb-4">
@@ -65,7 +65,7 @@ export default function TermsOfService() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 font-heading text-2xl font-semibold">
             4. User Content
           </h2>
           <p className="mb-4">
@@ -94,7 +94,7 @@ export default function TermsOfService() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 font-heading text-2xl font-semibold">
             5. Links to Other Websites
           </h2>
           <p className="mb-4">
@@ -117,7 +117,7 @@ export default function TermsOfService() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 font-heading text-2xl font-semibold">
             6. Termination
           </h2>
           <p className="mb-4">
@@ -134,7 +134,7 @@ export default function TermsOfService() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 font-heading text-2xl font-semibold">
             7. Limitation of Liability
           </h2>
           <p className="mb-4">
@@ -161,7 +161,7 @@ export default function TermsOfService() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 font-heading text-2xl font-semibold">
             8. Disclaimer
           </h2>
           <p className="mb-4">
@@ -182,7 +182,7 @@ export default function TermsOfService() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 font-heading text-2xl font-semibold">
             9. Governing Law
           </h2>
           <p className="mb-4">
@@ -199,7 +199,7 @@ export default function TermsOfService() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 font-heading text-2xl font-semibold">
             10. Changes to Terms
           </h2>
           <p className="mb-4">
@@ -217,7 +217,7 @@ export default function TermsOfService() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 font-heading text-2xl font-semibold">
             11. Contact Us
           </h2>
           <p className="mb-4">

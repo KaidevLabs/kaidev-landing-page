@@ -8,13 +8,13 @@ export const metadata: Metadata = {
 export default function PrivacyPolicy() {
   return (
     <div className="container mx-auto max-w-4xl px-4 pt-24 pb-12">
-      <h1 className="font-heading mb-8 text-4xl font-bold">Privacy Policy</h1>
+      <h1 className="mb-8 font-heading text-4xl font-bold">Privacy Policy</h1>
 
       <p className="mb-6 text-lg">Last updated: May 13, 2025</p>
 
       <div className="space-y-8">
         <section>
-          <h2 className="font-heading mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 font-heading text-2xl font-semibold">
             1. Introduction
           </h2>
           <p className="mb-4">
@@ -31,11 +31,11 @@ export default function PrivacyPolicy() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 font-heading text-2xl font-semibold">
             2. Information We Collect
           </h2>
 
-          <h3 className="font-heading mb-3 text-xl font-semibold">
+          <h3 className="mb-3 font-heading text-xl font-semibold">
             Personal Information
           </h3>
           <p className="mb-4">
@@ -52,7 +52,7 @@ export default function PrivacyPolicy() {
             <li>Any other information you choose to provide</li>
           </ul>
 
-          <h3 className="font-heading mb-3 text-xl font-semibold">
+          <h3 className="mb-3 font-heading text-xl font-semibold">
             Automatically Collected Information
           </h3>
           <p className="mb-4">
@@ -72,7 +72,7 @@ export default function PrivacyPolicy() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 font-heading text-2xl font-semibold">
             3. How We Use Your Information
           </h2>
           <p className="mb-4">
@@ -94,7 +94,7 @@ export default function PrivacyPolicy() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 font-heading text-2xl font-semibold">
             4. Cookies and Other Tracking Technologies
           </h2>
           <p className="mb-4">
@@ -113,7 +113,7 @@ export default function PrivacyPolicy() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 font-heading text-2xl font-semibold">
             5. Third-Party Disclosure
           </h2>
           <p className="mb-4">
@@ -146,7 +146,7 @@ export default function PrivacyPolicy() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 font-heading text-2xl font-semibold">
             6. Data Security
           </h2>
           <p className="mb-4">
@@ -159,7 +159,7 @@ export default function PrivacyPolicy() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 font-heading text-2xl font-semibold">
             7. Your Rights
           </h2>
           <p className="mb-4">
@@ -189,7 +189,7 @@ export default function PrivacyPolicy() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 font-heading text-2xl font-semibold">
             8. Children&apos;s Privacy
           </h2>
           <p className="mb-4">
@@ -202,7 +202,7 @@ export default function PrivacyPolicy() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 font-heading text-2xl font-semibold">
             9. Changes to This Privacy Policy
           </h2>
           <p className="mb-4">
@@ -214,7 +214,7 @@ export default function PrivacyPolicy() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 font-heading text-2xl font-semibold">
             10. Contact Us
           </h2>
           <p className="mb-4">

@@ -76,7 +76,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="font-heading mb-4 text-lg font-medium text-warmWhite">
+            <h3 className="mb-4 font-heading text-lg font-medium text-warmWhite">
               Enlaces
             </h3>
             <ul className="space-y-2">
@@ -132,7 +132,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="font-heading mb-4 text-lg font-medium text-warmWhite">
+            <h3 className="mb-4 font-heading text-lg font-medium text-warmWhite">
               Legal
             </h3>
             <ul className="space-y-2">

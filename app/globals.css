@@ -16,7 +16,7 @@
   --color-systemGrey: #444444;
   --color-kaidevGradientFrom: #2d6969;
   --color-kaidevGradientTo: #00aba0;
-  --color-heroColor: #10161f;
+  --color-heroColor: var(--color-graphiteDeep);
 
   /* shadcn tokens */
   --color-border: hsl(var(--border));
@@ -65,6 +65,31 @@
       height: 0;
     }
   }
+}
+
+@theme {
+  /* Approved intermediates */
+  --color-tealDeep: #0f6b66;
+  --color-graphiteDeep: #10161f;
+
+  /* Semantic roles — components use these, not raw palette values */
+  --color-canvas: #f3f4f4; /* page background */
+  --color-surface: #ffffff; /* raised surface */
+  --color-surface-warm: #e4dfdb; /* quote / testimonial surface */
+  --color-surface-dark: var(--color-graphiteDeep); /* dark editorial block */
+  --color-ink: #353837; /* primary text */
+  --color-ink-muted: #444444; /* secondary text */
+  --color-ink-inverse: #e4dfdb; /* text on dark */
+  --color-line: #dddddd; /* hairline border */
+  --color-focus: #0f6b66; /* focus indicator on light */
+  --color-focus-inverse: #6ca6a2; /* focus indicator on dark */
+  --color-action: #0f6b66; /* primary action background */
+  --color-on-action: #ffffff; /* text on action */
+
+  /* Typography — next/font variables are set on <html> */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading:
+    var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
@@ -136,21 +161,21 @@
   body {
     @apply bg-background text-foreground;
   }
-
-  /* Custom font classes */
-  .font-heading {
-    font-family:
-      'Space Grotesk', sans-serif; /* Alternative to Neue Haas Grotesk */
-  }
-
-  .font-sans {
-    font-family: 'Inter', sans-serif;
-  }
 }
 
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-bounce {
+    animation: none;
+  }
 }
 
 /* Custom animations */

@@ -40,7 +40,7 @@ const WasteSignalsSection = () => {
     <section id="senales" className="bg-softPaper py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
-          <h2 className="font-heading mb-4 text-3xl font-semibold text-graphiteCore sm:text-4xl md:text-5xl">
+          <h2 className="mb-4 font-heading text-3xl font-semibold text-graphiteCore sm:text-4xl md:text-5xl">
             Señales de que estás pagando{' '}
             <span className="text-kaidevTeal">más de lo que aprovechas</span>
           </h2>
@@ -59,7 +59,7 @@ const WasteSignalsSection = () => {
                 className="rounded-lg border border-graphiteCore/10 bg-warmWhite p-8"
               >
                 <Icon className="mb-4 h-6 w-6 text-kaidevTeal" />
-                <h3 className="font-heading mb-3 text-xl text-graphiteCore">
+                <h3 className="mb-3 font-heading text-xl text-graphiteCore">
                   {signal.title}
                 </h3>
                 <p className="text-graphiteCore/80">{signal.text}</p>
@@ -69,7 +69,7 @@ const WasteSignalsSection = () => {
 
           <div className="rounded-lg border-0 bg-heroColor p-8 text-warmWhite">
             <AlarmClock className="mb-4 h-6 w-6 text-kaidevTeal" />
-            <h3 className="font-heading mb-3 text-xl text-warmWhite">
+            <h3 className="mb-3 font-heading text-xl text-warmWhite">
               ¿Miércoles y ya sin capacidad?
             </h3>
             <p className="text-warmWhite/80">

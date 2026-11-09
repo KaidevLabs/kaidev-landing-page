@@ -41,7 +41,7 @@ const ServicesSection = () => {
     <section id="servicios" className="bg-warmWhite py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
-          <h2 className="font-heading mb-4 text-3xl font-semibold text-graphiteCore sm:text-4xl md:text-5xl">
+          <h2 className="mb-4 font-heading text-3xl font-semibold text-graphiteCore sm:text-4xl md:text-5xl">
             Un recorrido para convertir el gasto en{' '}
             <span className="text-kaidevTeal">capacidad</span>
           </h2>
@@ -68,7 +68,7 @@ const ServicesSection = () => {
                   </span>
                   <Icon className="h-6 w-6 text-kaidevTeal" />
                 </div>
-                <h3 className="font-heading mb-3 text-2xl text-graphiteCore">
+                <h3 className="mb-3 font-heading text-2xl text-graphiteCore">
                   {service.title}
                 </h3>
                 <p className="mb-4 text-graphiteCore/80">
@@ -83,7 +83,7 @@ const ServicesSection = () => {
         </div>
 
         <div className="mt-10 rounded-lg border border-graphiteCore/15 bg-warmWhite p-6">
-          <h3 className="font-heading mb-3 text-lg text-graphiteCore">
+          <h3 className="mb-3 font-heading text-lg text-graphiteCore">
             ¿Prefieres que lo implementemos nosotros?
           </h3>
           <p className="text-graphiteCore/80">
@@ -95,7 +95,7 @@ const ServicesSection = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <h3 className="font-heading mb-4 text-3xl font-semibold text-graphiteCore">
+          <h3 className="mb-4 font-heading text-3xl font-semibold text-graphiteCore">
             Antes de comprar más capacidad, mide la que ya tienes.
           </h3>
           <p className="mx-auto mb-8 max-w-2xl text-lg text-graphiteCore/80">

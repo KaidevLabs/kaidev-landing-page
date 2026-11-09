@@ -9,13 +9,13 @@ export const metadata: Metadata = {
 export default function CookiePolicy() {
   return (
     <div className="container mx-auto max-w-4xl px-4 pt-24 pb-12">
-      <h1 className="font-heading mb-8 text-4xl font-bold">Cookie Policy</h1>
+      <h1 className="mb-8 font-heading text-4xl font-bold">Cookie Policy</h1>
 
       <p className="mb-6 text-lg">Last updated: May 13, 2025</p>
 
       <div className="space-y-8">
         <section>
-          <h2 className="font-heading mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 font-heading text-2xl font-semibold">
             1. Introduction
           </h2>
           <p className="mb-4">
@@ -40,7 +40,7 @@ export default function CookiePolicy() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 font-heading text-2xl font-semibold">
             2. What Are Cookies?
           </h2>
           <p className="mb-4">
@@ -59,7 +59,7 @@ export default function CookiePolicy() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 font-heading text-2xl font-semibold">
             3. Types of Cookies We Use
           </h2>
           <p className="mb-4">
@@ -67,7 +67,7 @@ export default function CookiePolicy() {
             These include:
           </p>
 
-          <h3 className="font-heading mb-3 text-xl font-semibold">
+          <h3 className="mb-3 font-heading text-xl font-semibold">
             Essential Cookies
           </h3>
           <p className="mb-4">
@@ -80,7 +80,7 @@ export default function CookiePolicy() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 font-heading text-2xl font-semibold">
             4. Managing and Disabling Cookies
           </h2>
           <p className="mb-4">
@@ -151,7 +151,7 @@ export default function CookiePolicy() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 font-heading text-2xl font-semibold">
             5. Changes to This Cookie Policy
           </h2>
           <p className="mb-4">
@@ -167,7 +167,7 @@ export default function CookiePolicy() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-4 text-2xl font-semibold">
+          <h2 className="mb-4 font-heading text-2xl font-semibold">
             6. Contact Us
           </h2>
           <p className="mb-4">

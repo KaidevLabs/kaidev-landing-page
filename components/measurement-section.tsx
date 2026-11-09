@@ -15,7 +15,7 @@ const MeasurementSection = () => {
     <section id="medicion" className="bg-softPaper py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
-          <h2 className="font-heading mb-4 text-3xl font-semibold text-graphiteCore sm:text-4xl md:text-5xl">
+          <h2 className="mb-4 font-heading text-3xl font-semibold text-graphiteCore sm:text-4xl md:text-5xl">
             Lo que no se mide{' '}
             <span className="text-kaidevTeal">no se puede optimizar</span>
           </h2>
@@ -34,7 +34,7 @@ const MeasurementSection = () => {
               El objetivo no es consumir menos a cualquier precio, sino
               conseguir más trabajo útil con los recursos disponibles.
             </p>
-            <div className="font-heading border-l-4 border-kaidevTeal bg-warmWhite p-6 text-lg text-graphiteCore">
+            <div className="border-l-4 border-kaidevTeal bg-warmWhite p-6 font-heading text-lg text-graphiteCore">
               Separamos siempre ahorro obtenido, ahorro estimado, coste evitado
               y productividad materializada. Lo que no se puede demostrar, no se
               presenta como resultado.

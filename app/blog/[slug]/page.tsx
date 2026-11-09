@@ -50,7 +50,7 @@ export default async function BlogPost({
 
   return (
     <div className="container mx-auto max-w-4xl px-4 pt-40 pb-12">
-      <h1 className="font-heading mb-4 text-4xl font-bold">
+      <h1 className="mb-4 font-heading text-4xl font-bold">
         {postData.metadata.title}
       </h1>
       <p className="mb-8 text-sm text-muted-foreground">

@@ -3,7 +3,7 @@ const ProblemSection = () => {
     <section id="problema" className="bg-warmWhite py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
-          <h2 className="font-heading mb-4 text-3xl font-semibold text-graphiteCore sm:text-4xl md:text-5xl">
+          <h2 className="mb-4 font-heading text-3xl font-semibold text-graphiteCore sm:text-4xl md:text-5xl">
             Tu empresa ya tiene IA. El siguiente salto es{' '}
             <span className="text-kaidevTeal">hacerla rendir</span>.
           </h2>
@@ -31,7 +31,7 @@ const ProblemSection = () => {
           </p>
         </div>
 
-        <div className="font-heading mx-auto mt-10 max-w-3xl border-l-4 border-kaidevTeal bg-softPaper p-6 text-xl text-graphiteCore">
+        <div className="mx-auto mt-10 max-w-3xl border-l-4 border-kaidevTeal bg-softPaper p-6 font-heading text-xl text-graphiteCore">
           Contratar herramientas de IA es sencillo. Convertir ese gasto en
           capacidad operativa medible exige ingeniería, gestión y criterio.
         </div>

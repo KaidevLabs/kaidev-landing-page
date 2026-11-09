@@ -5,7 +5,7 @@ const ContactSection = () => {
     <section id="contacto" className="bg-graphiteCore py-20 text-warmWhite">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
-          <h2 className="font-heading mb-4 text-3xl font-semibold sm:text-4xl md:text-5xl">
+          <h2 className="mb-4 font-heading text-3xl font-semibold sm:text-4xl md:text-5xl">
             Hablemos
           </h2>
           <div className="mx-auto mt-6 h-1 w-20 bg-kaidevTeal"></div>
