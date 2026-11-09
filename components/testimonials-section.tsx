@@ -78,7 +78,7 @@ const TestimonialsSection = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="relative bg-warmWhite rounded-lg shadow-sm p-8 md:p-12">
+          <div className="relative bg-warmWhite rounded-lg shadow-xs p-8 md:p-12">
             <div className="absolute top-6 left-6 text-kaidevTeal/20">
               <Quote className="h-16 w-16" />
             </div>

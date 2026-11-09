@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const pathname = usePathname()
-  const [isHomePage, setIsHomePage] = useState(pathname === "/")
+  const isHomePage = pathname === "/"
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,10 +24,6 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
-
-  useEffect(() => {
-    setIsHomePage(pathname === "/")
-  }, [pathname])
 
   const toggleMenu = () => {
     setIsOpen(!isOpen)
@@ -45,13 +41,13 @@ const Navbar = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled || !isHomePage ? "bg-graphiteCore bg-opacity-95 shadow-md" : "bg-transparent"
+        scrolled || !isHomePage ? "bg-graphiteCore/95 shadow-md" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="shrink-0">
             <Link href="/">
               <Image
                 src="/images/logo_horizontal_flat_color_dark_bg.svg"
@@ -84,7 +80,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-warmWhite hover:text-kaidevTeal focus:outline-none"
+              className="text-warmWhite hover:text-kaidevTeal focus:outline-hidden"
               aria-label={isOpen ? "Close menu" : "Open menu"}
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}

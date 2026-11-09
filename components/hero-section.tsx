@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center bg-heroColor text-warmWhite pt-20">
       <div className="absolute inset-0 z-0 opacity-10">
-        <div className="h-full w-full bg-gradient-to-br from-kaidevGradientFrom to-kaidevGradientTo" />
+        <div className="h-full w-full bg-linear-to-br from-kaidevGradientFrom to-kaidevGradientTo" />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -25,7 +25,7 @@ const HeroSection = () => {
               <BookAppointmentButton />
               <a
                 href="#servicios"
-                className="inline-flex items-center justify-center px-6 py-3 border border-warmWhite/30 text-warmWhite rounded-md font-medium transition-all hover:bg-warmWhite/10 focus:outline-none focus:ring-2 focus:ring-warmWhite focus:ring-offset-2 focus:ring-offset-heroColor"
+                className="inline-flex items-center justify-center px-6 py-3 border border-warmWhite/30 text-warmWhite rounded-md font-medium transition-all hover:bg-warmWhite/10 focus:outline-hidden focus:ring-2 focus:ring-warmWhite focus:ring-offset-2 focus:ring-offset-heroColor"
               >
                 Ver los servicios
               </a>

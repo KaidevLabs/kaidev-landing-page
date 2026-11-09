@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Github, Linkedin, Mail, Twitter } from "lucide-react"
+import { Github, Linkedin, Mail } from "lucide-react"
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -22,7 +22,7 @@ const Footer = () => {
             <p className="mb-6 max-w-md">
               Consultora de ingeniería de software especializada en eficiencia en IA. Ayudamos a las empresas a obtener más trabajo útil de las herramientas que ya pagan, con medición, control de costes y seguridad.
             </p>
-            <div className="flex space-x-4 inline-block align-middle">
+            <div className="flex space-x-4">
               <a
                 href="https://github.com/EverlyRusher"
                 target="_blank"

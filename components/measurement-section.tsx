@@ -38,7 +38,7 @@ const MeasurementSection = () => {
             <ul className="space-y-4">
               {metrics.map((metric) => (
                 <li key={metric} className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-kaidevTeal flex-shrink-0" />
+                  <CheckCircle className="h-5 w-5 text-kaidevTeal shrink-0" />
                   <span className="text-graphiteCore/80">{metric}</span>
                 </li>
               ))}

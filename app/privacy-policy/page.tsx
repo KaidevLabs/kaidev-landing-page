@@ -18,7 +18,7 @@ export default function PrivacyPolicy() {
         <section>
           <h2 className="text-2xl font-semibold mb-4 font-heading">1. Introduction</h2>
           <p className="mb-4">
-            Welcome to Kaidev ("we," "our," or "us"). We are committed to protecting your privacy and personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
+            Welcome to Kaidev (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;). We are committed to protecting your privacy and personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
           </p>
           <p className="mb-4">
             Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.
@@ -115,12 +115,12 @@ export default function PrivacyPolicy() {
             <li>The right to withdraw consent</li>
           </ul>
           <p className="mb-4">
-            To exercise these rights, please contact us using the information provided in the "Contact Us" section below.
+            To exercise these rights, please contact us using the information provided in the &quot;Contact Us&quot; section below.
           </p>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold mb-4 font-heading">8. Children's Privacy</h2>
+          <h2 className="text-2xl font-semibold mb-4 font-heading">8. Children&apos;s Privacy</h2>
           <p className="mb-4">
             Our website is not intended for children under the age of 16. We do not knowingly collect personal information from children under 16. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us so that we can take necessary actions.
           </p>
@@ -129,7 +129,7 @@ export default function PrivacyPolicy() {
         <section>
           <h2 className="text-2xl font-semibold mb-4 font-heading">9. Changes to This Privacy Policy</h2>
           <p className="mb-4">
-            We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date. You are advised to review this Privacy Policy periodically for any changes.
+            We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the &quot;Last updated&quot; date. You are advised to review this Privacy Policy periodically for any changes.
           </p>
         </section>
 

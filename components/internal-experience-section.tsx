@@ -1,6 +1,6 @@
 const InternalExperienceSection = () => {
   return (
-    <section id="experiencia" className="py-20 bg-gradient-to-br from-kaidevGradientFrom to-kaidevGradientTo text-warmWhite">
+    <section id="experiencia" className="py-20 bg-linear-to-br from-kaidevGradientFrom to-kaidevGradientTo text-warmWhite">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-heading font-semibold text-3xl sm:text-4xl md:text-5xl mb-4">

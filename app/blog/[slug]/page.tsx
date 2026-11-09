@@ -17,7 +17,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: Promise<{ params: { slug: string } }>) {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const postData = await getPostData(slug);
 
@@ -27,12 +27,12 @@ export async function generateMetadata({ params }: Promise<{ params: { slug: str
   };
 }
 
-export default async function BlogPost({ params }: Promise<{ params: { slug: string } }>) {
+export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
   let postData;
   try {
     const { slug } = await params;
     postData = await getPostData(slug);
-  } catch (error) {
+  } catch {
     // If the file doesn't exist, return a 404
     notFound();
   }
