@@ -7,7 +7,7 @@ interface CustomComponentProps {
 
 export const CustomComponent: React.FC<CustomComponentProps> = ({ text }) => {
   return (
-    <div className="p-4 my-4 bg-blue-100 dark:bg-blue-900 border border-blue-300 dark:border-blue-700 rounded-md text-blue-800 dark:text-blue-200">
+    <div className="my-4 rounded-md border border-blue-300 bg-blue-100 p-4 text-blue-800 dark:border-blue-700 dark:bg-blue-900 dark:text-blue-200">
       <p className="font-semibold">Hello from a Custom Component!</p>
       <p>{text}</p>
     </div>
@@ -16,9 +16,8 @@ export const CustomComponent: React.FC<CustomComponentProps> = ({ text }) => {
 
 export const BookAppointmentButtonMDX: React.FC = () => {
   return (
-    <div className="w-full grid justify-center my-12">
+    <div className="my-12 grid w-full justify-center">
       <BookAppointmentButton />
     </div>
   );
 };
-

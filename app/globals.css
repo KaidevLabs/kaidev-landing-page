@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 @plugin "@tailwindcss/typography";
 
@@ -7,16 +7,16 @@
 
 @theme inline {
   /* Kaidev palette */
-  --color-kaidevTeal: #16807A;
-  --color-graphiteCore: #2C2F36;
-  --color-warmWhite: #E4DFDB;
-  --color-softPaper: #F3F4F4;
+  --color-kaidevTeal: #16807a;
+  --color-graphiteCore: #2c2f36;
+  --color-warmWhite: #e4dfdb;
+  --color-softPaper: #f3f4f4;
   --color-inkCharcoal: #353837;
-  --color-silentJade: #6CA6A2;
+  --color-silentJade: #6ca6a2;
   --color-systemGrey: #444444;
-  --color-kaidevGradientFrom: #2D6969;
-  --color-kaidevGradientTo: #00ABA0;
-  --color-heroColor: #10161F;
+  --color-kaidevGradientFrom: #2d6969;
+  --color-kaidevGradientTo: #00aba0;
+  --color-heroColor: #10161f;
 
   /* shadcn tokens */
   --color-border: hsl(var(--border));
@@ -50,12 +50,20 @@
   --animate-accordion-up: accordion-up 0.2s ease-out;
 
   @keyframes accordion-down {
-    from { height: 0; }
-    to { height: var(--radix-accordion-content-height); }
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
   }
   @keyframes accordion-up {
-    from { height: var(--radix-accordion-content-height); }
-    to { height: 0; }
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
   }
 }
 
@@ -131,11 +139,12 @@
 
   /* Custom font classes */
   .font-heading {
-    font-family: "Space Grotesk", sans-serif; /* Alternative to Neue Haas Grotesk */
+    font-family:
+      'Space Grotesk', sans-serif; /* Alternative to Neue Haas Grotesk */
   }
 
   .font-sans {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
   }
 }
 

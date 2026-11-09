@@ -1,51 +1,53 @@
-"use client"
+'use client';
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import Image from "next/image"
-import { Menu, X } from "lucide-react"
-import { usePathname } from 'next/navigation'
+import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { Menu, X } from 'lucide-react';
+import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
-  const pathname = usePathname()
-  const isHomePage = pathname === "/"
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const isHomePage = pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
-        setScrolled(true)
+        setScrolled(true);
       } else {
-        setScrolled(false)
+        setScrolled(false);
       }
-    }
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen)
-  }
+    setIsOpen(!isOpen);
+  };
 
   const navLinks = [
-    { name: "Servicios", href: "/#servicios" },
-    { name: "Experiencia", href: "/#experiencia" },
-    { name: "Medición", href: "/#medicion" },
-    { name: "Testimonios", href: "/#testimonios" },
-    { name: "Contacto", href: "/#contacto" },
-    { name: "Blog", href: "/blog" },
-  ]
+    { name: 'Servicios', href: '/#servicios' },
+    { name: 'Experiencia', href: '/#experiencia' },
+    { name: 'Medición', href: '/#medicion' },
+    { name: 'Testimonios', href: '/#testimonios' },
+    { name: 'Contacto', href: '/#contacto' },
+    { name: 'Blog', href: '/blog' },
+  ];
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled || !isHomePage ? "bg-graphiteCore/95 shadow-md" : "bg-transparent"
+      className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
+        scrolled || !isHomePage
+          ? 'bg-graphiteCore/95 shadow-md'
+          : 'bg-transparent'
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <div className="shrink-0">
             <Link href="/">
@@ -67,7 +69,7 @@ const Navbar = () => {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-warmWhite hover:text-kaidevTeal transition-colors duration-300 font-medium"
+                    className="font-medium text-warmWhite transition-colors duration-300 hover:text-kaidevTeal"
                   >
                     {link.name}
                   </Link>
@@ -81,9 +83,13 @@ const Navbar = () => {
             <button
               onClick={toggleMenu}
               className="text-warmWhite hover:text-kaidevTeal focus:outline-hidden"
-              aria-label={isOpen ? "Close menu" : "Open menu"}
+              aria-label={isOpen ? 'Close menu' : 'Open menu'}
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </button>
           </div>
         </div>
@@ -91,13 +97,13 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden bg-graphiteCore">
-          <div className="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+        <div className="bg-graphiteCore md:hidden">
+          <div className="space-y-1 px-2 pt-2 pb-4 sm:px-3">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
-                className="block px-3 py-2 text-warmWhite hover:text-kaidevTeal transition-colors duration-300 font-medium"
+                className="block px-3 py-2 font-medium text-warmWhite transition-colors duration-300 hover:text-kaidevTeal"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
@@ -107,7 +113,7 @@ const Navbar = () => {
         </div>
       )}
     </header>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

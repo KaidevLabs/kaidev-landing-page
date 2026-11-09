@@ -1,4 +1,7 @@
-import { BookAppointmentButtonMDX, CustomComponent } from '@/components/mdx-components';
+import {
+  BookAppointmentButtonMDX,
+  CustomComponent,
+} from '@/components/mdx-components';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { formatDate } from '@/lib/utils';
 import { getPostData, getAllPostSlugs } from '@/lib/blog';
@@ -17,7 +20,11 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
   const postData = await getPostData(slug);
 
@@ -27,7 +34,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
-export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
+export default async function BlogPost({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   let postData;
   try {
     const { slug } = await params;
@@ -38,12 +49,14 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
   }
 
   return (
-    <div className="container mx-auto px-4 pb-12 pt-40 max-w-4xl">
-      <h1 className="text-4xl font-bold mb-4 font-heading">{postData.metadata.title}</h1>
-      <p className="text-sm text-muted-foreground mb-8">
+    <div className="container mx-auto max-w-4xl px-4 pt-40 pb-12">
+      <h1 className="font-heading mb-4 text-4xl font-bold">
+        {postData.metadata.title}
+      </h1>
+      <p className="mb-8 text-sm text-muted-foreground">
         By {postData.metadata.author} on {formatDate(postData.metadata.date)}
       </p>
-      <article className="prose dark:prose-invert max-w-none">
+      <article className="prose max-w-none dark:prose-invert">
         <MDXRemote source={postData.content} components={components} />
       </article>
     </div>
