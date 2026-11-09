@@ -40,7 +40,7 @@ export default function RootLayout({
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />
-        <script defer src="https://umami.kaidev.io/script.js" data-website-id="e02e6171-142b-4c3b-96fb-b30c26fd00a0"></script>
+        <script async src="https://umami.kaidev.io/script.js" data-website-id="e02e6171-142b-4c3b-96fb-b30c26fd00a0" data-domains="kaidev.io"></script>
       </body>
     </html>
   )
