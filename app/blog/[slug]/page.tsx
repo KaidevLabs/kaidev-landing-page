@@ -49,16 +49,18 @@ export default async function BlogPost({
   }
 
   return (
-    <div className="container mx-auto max-w-4xl px-4 pt-40 pb-12">
-      <h1 className="mb-4 font-heading text-4xl font-bold">
-        {postData.metadata.title}
-      </h1>
-      <p className="mb-8 text-sm text-muted-foreground">
-        By {postData.metadata.author} on {formatDate(postData.metadata.date)}
-      </p>
-      <article className="prose max-w-none dark:prose-invert">
-        <MDXRemote source={postData.content} components={components} />
-      </article>
+    <div className="container mx-auto max-w-4xl px-4 pt-32 pb-16 sm:px-6 md:pt-40 md:pb-24 lg:px-8">
+      <div className="max-w-[68ch]">
+        <h1 className="mb-4 font-heading text-[2rem] leading-[1.1] font-semibold tracking-tight text-balance text-ink sm:text-[2.5rem] lg:text-[3rem]">
+          {postData.metadata.title}
+        </h1>
+        <p className="text-sm text-ink-muted">
+          By {postData.metadata.author} on {formatDate(postData.metadata.date)}
+        </p>
+        <article className="prose prose-lg mt-8 max-w-none border-t border-line pt-10 prose-headings:font-heading prose-headings:text-ink prose-p:text-ink-muted prose-strong:text-ink [&_p_a]:text-tealDeep">
+          <MDXRemote source={postData.content} components={components} />
+        </article>
+      </div>
     </div>
   );
 }
