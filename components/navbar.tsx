@@ -42,15 +42,18 @@ const Navbar = () => {
     <header
       className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
         scrolled || !isHomePage
-          ? 'bg-graphiteCore/95 shadow-md'
+          ? 'bg-surface-dark/95 shadow-md'
           : 'bg-transparent'
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex h-20 items-center justify-between gap-4">
           {/* Logo */}
           <div className="shrink-0">
-            <Link href="/">
+            <Link
+              href="/"
+              className="inline-flex min-h-11 items-center rounded-sm focus-visible:ring-2 focus-visible:ring-focus-inverse focus-visible:ring-offset-2 focus-visible:ring-offset-transparent focus-visible:outline-hidden"
+            >
               <Image
                 src="/images/logo_horizontal_flat_color_dark_bg.svg"
                 alt="Kaidev Logo"
@@ -64,12 +67,12 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:block">
-            <ul className="flex space-x-8">
+            <ul className="flex items-center gap-0 lg:gap-4">
               {navLinks.map((link) => (
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="font-medium text-warmWhite transition-colors duration-300 hover:text-kaidevTeal"
+                    className="inline-flex min-h-11 items-center rounded-sm px-2 font-medium text-ink-inverse transition-colors duration-300 hover:text-silentJade focus-visible:ring-2 focus-visible:ring-focus-inverse focus-visible:ring-offset-2 focus-visible:ring-offset-transparent focus-visible:outline-hidden lg:px-3"
                   >
                     {link.name}
                   </Link>
@@ -82,8 +85,10 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-warmWhite hover:text-kaidevTeal focus:outline-hidden"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-md text-ink-inverse transition-colors hover:text-silentJade focus-visible:ring-2 focus-visible:ring-focus-inverse focus-visible:ring-offset-2 focus-visible:ring-offset-transparent focus-visible:outline-hidden"
               aria-label={isOpen ? 'Close menu' : 'Open menu'}
+              aria-expanded={isOpen}
+              aria-controls="mobile-menu"
             >
               {isOpen ? (
                 <X className="h-6 w-6" />
@@ -97,13 +102,16 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="bg-graphiteCore md:hidden">
-          <div className="space-y-1 px-2 pt-2 pb-4 sm:px-3">
+        <div
+          id="mobile-menu"
+          className="border-t border-ink-inverse/10 bg-surface-dark md:hidden"
+        >
+          <div className="space-y-1 px-4 pt-2 pb-4">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
-                className="block px-3 py-2 font-medium text-warmWhite transition-colors duration-300 hover:text-kaidevTeal"
+                className="flex min-h-11 items-center rounded-sm px-3 font-medium text-ink-inverse transition-colors duration-300 hover:text-silentJade focus-visible:ring-2 focus-visible:ring-focus-inverse focus-visible:ring-offset-2 focus-visible:ring-offset-transparent focus-visible:outline-hidden"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
