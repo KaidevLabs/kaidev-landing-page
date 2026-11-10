@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 import Link from 'next/link';
+import SectionHeading from './section-heading';
 
 const testimonials = [
   {
@@ -72,21 +73,29 @@ const TestimonialsSection = () => {
     );
   };
 
+  const controlClass =
+    'inline-flex h-11 w-11 items-center justify-center rounded-full text-tealDeep transition-colors focus-visible:ring-2 focus-visible:ring-focus focus-visible:ring-offset-2 focus-visible:ring-offset-surface-warm focus-visible:outline-hidden';
+
   return (
-    <section id="testimonios" className="bg-softPaper py-20">
+    <section id="testimonios" className="bg-canvas py-16 md:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-16 text-center">
-          <h2 className="mb-4 font-heading text-3xl font-semibold text-graphiteCore sm:text-4xl md:text-5xl">
-            Lo que dicen{' '}
-            <span className="text-kaidevTeal">nuestros clientes</span>
-          </h2>
-          <div className="mx-auto h-1 w-20 bg-kaidevTeal"></div>
-        </div>
+        <SectionHeading
+          title={
+            <>
+              Lo que dicen{' '}
+              <span className="text-kaidevTeal">nuestros clientes</span>
+            </>
+          }
+          className="mb-10 md:mb-14"
+        />
 
         <div className="mx-auto max-w-4xl">
-          <div className="relative rounded-lg bg-warmWhite p-8 shadow-xs md:p-12">
-            <div className="absolute top-6 left-6 text-kaidevTeal/20">
-              <Quote className="h-16 w-16" />
+          <div className="relative rounded-lg bg-surface-warm p-6 shadow-xs md:p-12">
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute top-6 left-6 text-tealDeep/15"
+            >
+              <Quote className="h-12 w-12 md:h-16 md:w-16" />
             </div>
 
             <div className="relative z-10">
@@ -94,7 +103,7 @@ const TestimonialsSection = () => {
                 {testimonials[currentIndex].quote.map((part, index) => (
                   <p
                     key={index}
-                    className="text-center text-lg italic md:text-xl"
+                    className="text-center text-lg leading-relaxed text-pretty italic md:text-xl"
                   >
                     {part}
                   </p>
@@ -105,7 +114,7 @@ const TestimonialsSection = () => {
                   {testimonials[currentIndex].translation.map((part, index) => (
                     <p
                       key={index}
-                      className="text-center text-lg text-sm text-graphiteCore italic"
+                      className="text-center text-base leading-relaxed text-pretty text-ink-muted italic"
                     >
                       {part}
                     </p>
@@ -115,12 +124,16 @@ const TestimonialsSection = () => {
               <div className="flex flex-col gap-3">
                 {testimonials[currentIndex].authors.map((author) => (
                   <div key={author.name} className="flex flex-col items-center">
-                    <p className="font-medium text-graphiteCore">
-                      <Link href={author.url ?? ''} target="_blank">
+                    <p className="font-medium text-ink">
+                      <Link
+                        href={author.url ?? ''}
+                        target="_blank"
+                        className="transition-colors hover:text-tealDeep focus-visible:ring-2 focus-visible:ring-focus focus-visible:ring-offset-2 focus-visible:ring-offset-surface-warm focus-visible:outline-hidden"
+                      >
                         {author.name}
                       </Link>
                     </p>
-                    <p className="text-sm text-graphiteCore/70">
+                    <p className="text-center text-sm text-ink-muted">
                       {author.position}
                     </p>
                   </div>
@@ -128,36 +141,45 @@ const TestimonialsSection = () => {
               </div>
             </div>
 
-            <div className="mt-8 flex justify-center space-x-4">
+            <div className="relative z-10 mt-10 flex items-center justify-center gap-2 md:gap-4">
               <button
+                type="button"
                 onClick={prevTestimonial}
-                className="rounded-full bg-kaidevTeal/10 p-2 text-kaidevTeal transition-colors hover:bg-kaidevTeal/20"
                 aria-label="Previous testimonial"
+                className={`${controlClass} bg-tealDeep/10 hover:bg-tealDeep/20`}
               >
-                <ChevronLeft className="h-5 w-5" />
+                <ChevronLeft aria-hidden="true" className="h-5 w-5" />
               </button>
 
-              <div className="flex space-x-2">
+              <div className="flex items-center gap-1">
                 {testimonials.map((_, index) => (
                   <button
                     key={index}
+                    type="button"
                     onClick={() => setCurrentIndex(index)}
-                    className={`h-3 w-3 rounded-full transition-colors ${
-                      index === currentIndex
-                        ? 'bg-kaidevTeal'
-                        : 'bg-kaidevTeal/30 hover:bg-kaidevTeal/50'
-                    }`}
                     aria-label={`Go to testimonial ${index + 1}`}
-                  />
+                    aria-current={index === currentIndex ? 'true' : undefined}
+                    className={`${controlClass} hover:bg-tealDeep/10`}
+                  >
+                    <span
+                      aria-hidden="true"
+                      className={`block h-2.5 w-2.5 rounded-full transition-colors ${
+                        index === currentIndex
+                          ? 'bg-tealDeep'
+                          : 'bg-tealDeep/30 hover:bg-tealDeep/50'
+                      }`}
+                    />
+                  </button>
                 ))}
               </div>
 
               <button
+                type="button"
                 onClick={nextTestimonial}
-                className="rounded-full bg-kaidevTeal/10 p-2 text-kaidevTeal transition-colors hover:bg-kaidevTeal/20"
                 aria-label="Next testimonial"
+                className={`${controlClass} bg-tealDeep/10 hover:bg-tealDeep/20`}
               >
-                <ChevronRight className="h-5 w-5" />
+                <ChevronRight aria-hidden="true" className="h-5 w-5" />
               </button>
             </div>
           </div>
