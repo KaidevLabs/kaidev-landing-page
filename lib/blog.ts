@@ -43,13 +43,13 @@ export function getSortedPostsData(): PostMetadata[] {
     // Combine the data with the slug
     return {
       slug,
-      ...(PostFrontmatterSchema.parse(matterResult.data)),
+      ...PostFrontmatterSchema.parse(matterResult.data),
     };
   });
 
   // Sort posts by date
   return allPostsData.sort(
-      (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
+    (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),
   );
 }
 
@@ -72,7 +72,7 @@ export const getPostData = cache(async (slug: string): Promise<PostData> => {
   return {
     metadata: {
       slug,
-      ...(PostFrontmatterSchema.parse(matterResult.data)),
+      ...PostFrontmatterSchema.parse(matterResult.data),
     },
     content: matterResult.content,
   };

@@ -96,7 +96,6 @@ kaidev-landing/
 │ └── ... # Other components
 ├── public/ # Static assets
 │ └── images/ # Image files
-├── tailwind.config.ts # Tailwind CSS configuration
 └── ... # Other configuration files
 ```
 
@@ -167,7 +166,7 @@ Most of the website content can be modified directly in the component files:
 The project uses Tailwind CSS for styling:
 
 1. Global styles are in `app/globals.css`
-2. Brand colors and other theme extensions are in `tailwind.config.ts`
+2. Brand colors and other theme extensions are in the `@theme` block of `app/globals.css`
 3. Component-specific styles are applied using Tailwind classes in each component
 
 ### Adding New Sections
