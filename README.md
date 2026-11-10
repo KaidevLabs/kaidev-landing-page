@@ -101,7 +101,7 @@ kaidev-landing/
 
 ## 🎨 Style Guide
 
-The project follows Kaidev's brand guidelines:
+The project follows [Kaidev's brand guidelines](docs/brand-guide.html):
 
 ### Colors
 
