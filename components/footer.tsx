@@ -4,13 +4,23 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 
 const currentYear = new Date().getFullYear();
 
+const focusRing =
+  'focus-visible:ring-2 focus-visible:ring-focus-inverse focus-visible:ring-offset-2 focus-visible:ring-offset-graphiteCore focus-visible:outline-hidden';
+
+const socialLink = `inline-flex h-11 w-11 items-center justify-center rounded-md text-ink-inverse/70 transition-colors hover:bg-ink-inverse/10 hover:text-silentJade ${focusRing}`;
+
+const footerLink = `inline-flex min-h-11 min-w-11 max-w-full items-center rounded-sm text-ink-inverse/70 transition-colors hover:text-silentJade ${focusRing}`;
+
 const Footer = () => {
   return (
-    <footer className="bg-inkCharcoal text-warmWhite/80">
-      <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
-          <div className="md:col-span-2">
-            <Link href="/#inicio" className="mb-6 inline-block">
+    <footer className="border-t border-ink-inverse/10 bg-graphiteCore text-ink-inverse/80">
+      <div className="container mx-auto px-4 py-12 sm:px-6 md:py-16 lg:px-8">
+        <div className="grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-4 md:gap-8">
+          <div className="col-span-2">
+            <Link
+              href="/#inicio"
+              className={`mb-5 inline-flex min-h-11 items-center rounded-sm ${focusRing}`}
+            >
               <Image
                 src="/images/logo_horizontal_flat_color_dark_bg.svg"
                 alt="Kaidev Logo"
@@ -19,36 +29,36 @@ const Footer = () => {
                 className="h-10 w-auto"
               />
             </Link>
-            <p className="mb-6 max-w-md">
+            <p className="mb-6 max-w-md text-ink-inverse/80">
               Consultora de ingeniería de software especializada en eficiencia
               en IA. Ayudamos a las empresas a obtener más trabajo útil de las
               herramientas que ya pagan, con medición, control de costes y
               seguridad.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex flex-wrap items-center gap-2">
               <a
                 href="https://github.com/EverlyRusher"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center text-warmWhite/70 transition-colors hover:text-kaidevTeal"
+                className={socialLink}
                 aria-label="GitHub"
               >
-                <Github className="h-5 w-5" />
+                <Github aria-hidden="true" className="h-5 w-5" />
               </a>
               <a
                 href="https://www.linkedin.com/company/kaidev/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center text-warmWhite/70 transition-colors hover:text-kaidevTeal"
+                className={socialLink}
                 aria-label="LinkedIn"
               >
-                <Linkedin className="h-5 w-5" />
+                <Linkedin aria-hidden="true" className="h-5 w-5" />
               </a>
               <a
                 href="https://bsky.app/profile/jpascual.kaidev.io"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center text-warmWhite/70 transition-colors hover:text-kaidevTeal"
+                className={socialLink}
                 aria-label="BlueSky"
               >
                 <svg
@@ -63,68 +73,50 @@ const Footer = () => {
                 href="mailto:info@kaidev.io"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center text-warmWhite/70 transition-colors hover:text-kaidevTeal"
                 aria-label="Email"
+                className={`inline-flex min-h-11 items-center gap-2 rounded-md px-2 text-ink-inverse/70 transition-colors hover:text-silentJade ${focusRing}`}
               >
-                <Mail />
-                &nbsp;info@kaidev.io
+                <Mail aria-hidden="true" className="h-5 w-5" />
+                <span>info@kaidev.io</span>
               </a>
             </div>
-            <p className="mt-6 text-sm">
+            <p className="mt-6 text-sm text-ink-inverse/70">
               Miembros de la comunidad Laravel Catalunya
             </p>
           </div>
 
           <div>
-            <h3 className="mb-4 font-heading text-lg font-medium text-warmWhite">
+            <h3 className="mb-3 font-heading text-lg font-medium text-ink-inverse">
               Enlaces
             </h3>
-            <ul className="space-y-2">
+            <ul>
               <li>
-                <Link
-                  href="/#inicio"
-                  className="text-warmWhite/70 transition-colors hover:text-kaidevTeal"
-                >
+                <Link href="/#inicio" className={footerLink}>
                   Inicio
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/#servicios"
-                  className="text-warmWhite/70 transition-colors hover:text-kaidevTeal"
-                >
+                <Link href="/#servicios" className={footerLink}>
                   Servicios
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/#experiencia"
-                  className="text-warmWhite/70 transition-colors hover:text-kaidevTeal"
-                >
+                <Link href="/#experiencia" className={footerLink}>
                   Experiencia
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/#medicion"
-                  className="text-warmWhite/70 transition-colors hover:text-kaidevTeal"
-                >
+                <Link href="/#medicion" className={footerLink}>
                   Medición
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/#testimonios"
-                  className="text-warmWhite/70 transition-colors hover:text-kaidevTeal"
-                >
+                <Link href="/#testimonios" className={footerLink}>
                   Testimonios
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/#contacto"
-                  className="text-warmWhite/70 transition-colors hover:text-kaidevTeal"
-                >
+                <Link href="/#contacto" className={footerLink}>
                   Contacto
                 </Link>
               </li>
@@ -132,31 +124,22 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="mb-4 font-heading text-lg font-medium text-warmWhite">
+            <h3 className="mb-3 font-heading text-lg font-medium text-ink-inverse">
               Legal
             </h3>
-            <ul className="space-y-2">
+            <ul>
               <li>
-                <Link
-                  href="/privacy-policy"
-                  className="text-warmWhite/70 transition-colors hover:text-kaidevTeal"
-                >
+                <Link href="/privacy-policy" className={footerLink}>
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/terms-of-service"
-                  className="text-warmWhite/70 transition-colors hover:text-kaidevTeal"
-                >
+                <Link href="/terms-of-service" className={footerLink}>
                   Terms of Service
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/cookie-policy"
-                  className="text-warmWhite/70 transition-colors hover:text-kaidevTeal"
-                >
+                <Link href="/cookie-policy" className={footerLink}>
                   Cookie Policy
                 </Link>
               </li>
@@ -164,7 +147,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-warmWhite/10 pt-8 text-center text-sm">
+        <div className="mt-10 border-t border-ink-inverse/10 pt-6 text-center text-sm text-ink-inverse/70 md:mt-12 md:pt-8">
           <p>© {currentYear} Kaidev. All rights reserved.</p>
         </div>
       </div>
