@@ -1,5 +1,6 @@
 import { Presentation, Search, GraduationCap, RefreshCw } from 'lucide-react';
 import { BookAppointmentButton } from './ui/book-appointment-button';
+import SectionHeading from './section-heading';
 
 const services = [
   {
@@ -38,43 +39,40 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id="servicios" className="bg-warmWhite py-20">
+    <section id="servicios" className="bg-canvas py-16 md:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-16 text-center">
-          <h2 className="mb-4 font-heading text-3xl font-semibold text-graphiteCore sm:text-4xl md:text-5xl">
-            Un recorrido para convertir el gasto en{' '}
-            <span className="text-kaidevTeal">capacidad</span>
-          </h2>
-          <p className="mx-auto max-w-2xl text-lg text-graphiteCore/80">
-            No vendemos tokens, agentes ni una configuración concreta de
-            herramientas. Vendemos la capacidad de mejorar cómo tu organización
-            utiliza la IA. La flexibilidad está en la profundidad de cada
-            intervención, no en un catálogo de piezas sueltas.
-          </p>
-          <div className="mx-auto mt-6 h-1 w-20 bg-kaidevTeal"></div>
-        </div>
+        <SectionHeading
+          align="left"
+          accent
+          title={
+            <>
+              Un recorrido para convertir el gasto en{' '}
+              <span className="text-kaidevTeal">capacidad</span>
+            </>
+          }
+          description="No vendemos tokens, agentes ni una configuración concreta de herramientas. Vendemos la capacidad de mejorar cómo tu organización utiliza la IA. La flexibilidad está en la profundidad de cada intervención, no en un catálogo de piezas sueltas."
+          className="mb-10 md:mb-14"
+        />
 
-        <div className="mt-12 grid gap-8 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2 md:gap-8">
           {services.map((service) => {
             const Icon = service.icon;
             return (
               <div
                 key={service.number}
-                className="rounded-lg border border-graphiteCore/10 bg-softPaper p-8"
+                className="rounded-lg border border-line bg-surface p-6 md:p-8"
               >
                 <div className="mb-4 flex items-center justify-between">
-                  <span className="font-heading text-sm tracking-widest text-kaidevTeal">
+                  <span className="font-heading text-sm tracking-widest text-tealDeep">
                     {service.number}
                   </span>
-                  <Icon className="h-6 w-6 text-kaidevTeal" />
+                  <Icon className="h-6 w-6 text-tealDeep" />
                 </div>
-                <h3 className="mb-3 font-heading text-2xl text-graphiteCore">
+                <h3 className="mb-3 font-heading text-xl text-ink md:text-2xl">
                   {service.title}
                 </h3>
-                <p className="mb-4 text-graphiteCore/80">
-                  {service.description}
-                </p>
-                <p className="text-sm font-medium text-kaidevTeal">
+                <p className="mb-4 text-ink-muted">{service.description}</p>
+                <p className="text-sm font-medium text-tealDeep">
                   {service.meta}
                 </p>
               </div>
@@ -82,11 +80,11 @@ const ServicesSection = () => {
           })}
         </div>
 
-        <div className="mt-10 rounded-lg border border-graphiteCore/15 bg-warmWhite p-6">
-          <h3 className="mb-3 font-heading text-lg text-graphiteCore">
+        <div className="mt-10 rounded-lg border border-line bg-surface-warm p-6 md:p-8">
+          <h3 className="mb-3 font-heading text-xl text-ink">
             ¿Prefieres que lo implementemos nosotros?
           </h3>
-          <p className="text-graphiteCore/80">
+          <p className="max-w-3xl text-ink-muted">
             Configuración de herramientas, desarrollo de skills, integraciones
             mediante MCP, agentes, automatizaciones, controles de límites de uso
             e instrumentación para medir consumo y resultados. Se contrata como
@@ -94,11 +92,11 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="mt-16 text-center">
-          <h3 className="mb-4 font-heading text-3xl font-semibold text-graphiteCore">
+        <div className="mt-16 text-center md:mt-20">
+          <h3 className="mx-auto mb-4 max-w-3xl font-heading text-2xl font-semibold text-balance text-ink md:text-3xl">
             Antes de comprar más capacidad, mide la que ya tienes.
           </h3>
-          <p className="mx-auto mb-8 max-w-2xl text-lg text-graphiteCore/80">
+          <p className="mx-auto mb-8 max-w-2xl text-lg text-pretty text-ink-muted">
             Si tu equipo ya está saturando sus cuentas, la conversación más
             rentable no es cuánto ampliar, sino qué está consumiendo esa
             capacidad.

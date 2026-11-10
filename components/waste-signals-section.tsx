@@ -6,6 +6,7 @@ import {
   BarChart3,
   AlarmClock,
 } from 'lucide-react';
+import SectionHeading from './section-heading';
 
 const signals = [
   {
@@ -37,42 +38,42 @@ const signals = [
 
 const WasteSignalsSection = () => {
   return (
-    <section id="senales" className="bg-softPaper py-20">
+    <section id="senales" className="bg-canvas py-16 md:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-16 text-center">
-          <h2 className="mb-4 font-heading text-3xl font-semibold text-graphiteCore sm:text-4xl md:text-5xl">
-            Señales de que estás pagando{' '}
-            <span className="text-kaidevTeal">más de lo que aprovechas</span>
-          </h2>
-          <p className="mx-auto max-w-2xl text-lg text-graphiteCore/80">
-            No hace falta un informe para reconocer los síntomas.
-          </p>
-          <div className="mx-auto mt-6 h-1 w-20 bg-kaidevTeal"></div>
-        </div>
+        <SectionHeading
+          title={
+            <>
+              Señales de que estás pagando{' '}
+              <span className="text-kaidevTeal">más de lo que aprovechas</span>
+            </>
+          }
+          description="No hace falta un informe para reconocer los síntomas."
+          className="mb-10 md:mb-14"
+        />
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {signals.map((signal) => {
             const Icon = signal.icon;
             return (
               <div
                 key={signal.title}
-                className="rounded-lg border border-graphiteCore/10 bg-warmWhite p-8"
+                className="rounded-lg border border-line bg-surface p-6 md:p-8"
               >
-                <Icon className="mb-4 h-6 w-6 text-kaidevTeal" />
-                <h3 className="mb-3 font-heading text-xl text-graphiteCore">
+                <Icon className="mb-4 h-6 w-6 text-tealDeep" />
+                <h3 className="mb-3 font-heading text-xl text-ink">
                   {signal.title}
                 </h3>
-                <p className="text-graphiteCore/80">{signal.text}</p>
+                <p className="text-ink-muted">{signal.text}</p>
               </div>
             );
           })}
 
-          <div className="rounded-lg border-0 bg-heroColor p-8 text-warmWhite">
-            <AlarmClock className="mb-4 h-6 w-6 text-kaidevTeal" />
-            <h3 className="mb-3 font-heading text-xl text-warmWhite">
+          <div className="rounded-lg border-0 bg-surface-dark p-6 text-ink-inverse md:p-8">
+            <AlarmClock className="mb-4 h-6 w-6 text-silentJade" />
+            <h3 className="mb-3 font-heading text-xl text-ink-inverse">
               ¿Miércoles y ya sin capacidad?
             </h3>
-            <p className="text-warmWhite/80">
+            <p className="text-ink-inverse/80">
               Antes de ampliar el gasto, conviene saber qué está consumiendo esa
               capacidad y qué resultados está produciendo.
             </p>
