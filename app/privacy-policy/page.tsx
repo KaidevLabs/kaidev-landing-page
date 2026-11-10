@@ -19,7 +19,7 @@ export default function PrivacyPolicy() {
 
         <div className="mt-8 space-y-10 border-t border-line pt-10 text-base leading-relaxed text-ink-muted md:space-y-12 md:text-lg">
           <section>
-            <h2 className="mb-4 font-heading text-2xl font-semibold text-ink">
+            <h2 className="mb-4 font-heading text-2xl font-semibold text-balance text-ink">
               1. Introduction
             </h2>
             <p className="mb-4">
@@ -37,7 +37,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="mb-4 font-heading text-2xl font-semibold text-ink">
+            <h2 className="mb-4 font-heading text-2xl font-semibold text-balance text-ink">
               2. Information We Collect
             </h2>
 
@@ -80,7 +80,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="mb-4 font-heading text-2xl font-semibold text-ink">
+            <h2 className="mb-4 font-heading text-2xl font-semibold text-balance text-ink">
               3. How We Use Your Information
             </h2>
             <p className="mb-4">
@@ -104,7 +104,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="mb-4 font-heading text-2xl font-semibold text-ink">
+            <h2 className="mb-4 font-heading text-2xl font-semibold text-balance text-ink">
               4. Cookies and Other Tracking Technologies
             </h2>
             <p className="mb-4">
@@ -123,7 +123,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="mb-4 font-heading text-2xl font-semibold text-ink">
+            <h2 className="mb-4 font-heading text-2xl font-semibold text-balance text-ink">
               5. Third-Party Disclosure
             </h2>
             <p className="mb-4">
@@ -156,7 +156,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="mb-4 font-heading text-2xl font-semibold text-ink">
+            <h2 className="mb-4 font-heading text-2xl font-semibold text-balance text-ink">
               6. Data Security
             </h2>
             <p className="mb-4">
@@ -169,7 +169,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="mb-4 font-heading text-2xl font-semibold text-ink">
+            <h2 className="mb-4 font-heading text-2xl font-semibold text-balance text-ink">
               7. Your Rights
             </h2>
             <p className="mb-4">
@@ -199,7 +199,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="mb-4 font-heading text-2xl font-semibold text-ink">
+            <h2 className="mb-4 font-heading text-2xl font-semibold text-balance text-ink">
               8. Children&apos;s Privacy
             </h2>
             <p className="mb-4">
@@ -212,7 +212,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="mb-4 font-heading text-2xl font-semibold text-ink">
+            <h2 className="mb-4 font-heading text-2xl font-semibold text-balance text-ink">
               9. Changes to This Privacy Policy
             </h2>
             <p className="mb-4">
@@ -224,7 +224,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="mb-4 font-heading text-2xl font-semibold text-ink">
+            <h2 className="mb-4 font-heading text-2xl font-semibold text-balance text-ink">
               10. Contact Us
             </h2>
             <p className="mb-4">

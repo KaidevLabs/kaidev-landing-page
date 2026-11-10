@@ -19,7 +19,7 @@ export default function TermsOfService() {
 
         <div className="mt-8 space-y-10 border-t border-line pt-10 text-base leading-relaxed text-ink-muted md:space-y-12 md:text-lg">
           <section>
-            <h2 className="mb-4 font-heading text-2xl font-semibold text-ink">
+            <h2 className="mb-4 font-heading text-2xl font-semibold text-balance text-ink">
               1. Acceptance of Terms
             </h2>
             <p className="mb-4">
@@ -37,7 +37,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="mb-4 font-heading text-2xl font-semibold text-ink">
+            <h2 className="mb-4 font-heading text-2xl font-semibold text-balance text-ink">
               2. Description of Service
             </h2>
             <p className="mb-4">
@@ -54,7 +54,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="mb-4 font-heading text-2xl font-semibold text-ink">
+            <h2 className="mb-4 font-heading text-2xl font-semibold text-balance text-ink">
               3. Intellectual Property
             </h2>
             <p className="mb-4">
@@ -71,7 +71,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="mb-4 font-heading text-2xl font-semibold text-ink">
+            <h2 className="mb-4 font-heading text-2xl font-semibold text-balance text-ink">
               4. User Content
             </h2>
             <p className="mb-4">
@@ -100,7 +100,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="mb-4 font-heading text-2xl font-semibold text-ink">
+            <h2 className="mb-4 font-heading text-2xl font-semibold text-balance text-ink">
               5. Links to Other Websites
             </h2>
             <p className="mb-4">
@@ -124,7 +124,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="mb-4 font-heading text-2xl font-semibold text-ink">
+            <h2 className="mb-4 font-heading text-2xl font-semibold text-balance text-ink">
               6. Termination
             </h2>
             <p className="mb-4">
@@ -141,7 +141,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="mb-4 font-heading text-2xl font-semibold text-ink">
+            <h2 className="mb-4 font-heading text-2xl font-semibold text-balance text-ink">
               7. Limitation of Liability
             </h2>
             <p className="mb-4">
@@ -168,7 +168,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="mb-4 font-heading text-2xl font-semibold text-ink">
+            <h2 className="mb-4 font-heading text-2xl font-semibold text-balance text-ink">
               8. Disclaimer
             </h2>
             <p className="mb-4">
@@ -189,7 +189,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="mb-4 font-heading text-2xl font-semibold text-ink">
+            <h2 className="mb-4 font-heading text-2xl font-semibold text-balance text-ink">
               9. Governing Law
             </h2>
             <p className="mb-4">
@@ -206,7 +206,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="mb-4 font-heading text-2xl font-semibold text-ink">
+            <h2 className="mb-4 font-heading text-2xl font-semibold text-balance text-ink">
               10. Changes to Terms
             </h2>
             <p className="mb-4">
@@ -224,7 +224,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="mb-4 font-heading text-2xl font-semibold text-ink">
+            <h2 className="mb-4 font-heading text-2xl font-semibold text-balance text-ink">
               11. Contact Us
             </h2>
             <p className="mb-4">

@@ -20,7 +20,7 @@ export default function CookiePolicy() {
 
         <div className="mt-8 space-y-10 border-t border-line pt-10 text-base leading-relaxed text-ink-muted md:space-y-12 md:text-lg">
           <section>
-            <h2 className="mb-4 font-heading text-2xl font-semibold text-ink">
+            <h2 className="mb-4 font-heading text-2xl font-semibold text-balance text-ink">
               1. Introduction
             </h2>
             <p className="mb-4">
@@ -45,7 +45,7 @@ export default function CookiePolicy() {
           </section>
 
           <section>
-            <h2 className="mb-4 font-heading text-2xl font-semibold text-ink">
+            <h2 className="mb-4 font-heading text-2xl font-semibold text-balance text-ink">
               2. What Are Cookies?
             </h2>
             <p className="mb-4">
@@ -64,7 +64,7 @@ export default function CookiePolicy() {
           </section>
 
           <section>
-            <h2 className="mb-4 font-heading text-2xl font-semibold text-ink">
+            <h2 className="mb-4 font-heading text-2xl font-semibold text-balance text-ink">
               3. Types of Cookies We Use
             </h2>
             <p className="mb-4">
@@ -85,7 +85,7 @@ export default function CookiePolicy() {
           </section>
 
           <section>
-            <h2 className="mb-4 font-heading text-2xl font-semibold text-ink">
+            <h2 className="mb-4 font-heading text-2xl font-semibold text-balance text-ink">
               4. Managing and Disabling Cookies
             </h2>
             <p className="mb-4">
@@ -156,7 +156,7 @@ export default function CookiePolicy() {
           </section>
 
           <section>
-            <h2 className="mb-4 font-heading text-2xl font-semibold text-ink">
+            <h2 className="mb-4 font-heading text-2xl font-semibold text-balance text-ink">
               5. Changes to This Cookie Policy
             </h2>
             <p className="mb-4">
@@ -172,7 +172,7 @@ export default function CookiePolicy() {
           </section>
 
           <section>
-            <h2 className="mb-4 font-heading text-2xl font-semibold text-ink">
+            <h2 className="mb-4 font-heading text-2xl font-semibold text-balance text-ink">
               6. Contact Us
             </h2>
             <p className="mb-4">
