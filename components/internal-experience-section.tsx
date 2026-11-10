@@ -4,21 +4,32 @@ const InternalExperienceSection = () => {
   return (
     <section
       id="experiencia"
-      className="bg-surface-dark py-16 text-ink-inverse md:py-24"
+      className="relative isolate overflow-hidden bg-surface-dark py-16 text-ink-inverse md:py-24"
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          tone="dark"
-          title={
-            <>
-              Lo aplicamos en casa{' '}
-              <span className="text-silentJade">antes de venderlo</span>
-            </>
-          }
-          className="mb-10 md:mb-14"
-        />
+      <div
+        aria-hidden="true"
+        className="kaidev-atmosphere kaidev-atmosphere--static"
+      />
+      <div aria-hidden="true" className="kaidev-grain" />
 
-        <div className="grid items-start gap-10 lg:grid-cols-2 lg:gap-12">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+        <div data-reveal="">
+          <SectionHeading
+            tone="dark"
+            title={
+              <>
+                Lo aplicamos en casa{' '}
+                <span className="text-silentJade">antes de venderlo</span>
+              </>
+            }
+            className="mb-10 md:mb-14"
+          />
+        </div>
+
+        <div
+          data-reveal=""
+          className="reveal-delay-1 grid items-start gap-10 lg:grid-cols-2 lg:gap-12"
+        >
           <div className="max-w-2xl space-y-4 text-lg leading-relaxed text-ink-inverse/85">
             <p>
               Esta línea no nace solo de observar el mercado. Nace de nuestro
@@ -46,7 +57,7 @@ const InternalExperienceSection = () => {
             </p>
           </div>
 
-          <div className="rounded-lg border border-ink-inverse/15 bg-ink-inverse/5 p-6 md:p-10">
+          <div className="rounded-xl border border-ink-inverse/15 bg-ink-inverse/5 p-6 md:p-10">
             <p className="font-heading text-5xl font-bold text-ink-inverse md:text-6xl">
               ~40 %
             </p>
