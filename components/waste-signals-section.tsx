@@ -38,26 +38,33 @@ const signals = [
 
 const WasteSignalsSection = () => {
   return (
-    <section id="senales" className="bg-canvas py-16 md:py-24">
+    <section id="senales" className="texture-paper bg-canvas py-16 md:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          title={
-            <>
-              Señales de que estás pagando{' '}
-              <span className="text-kaidevTeal">más de lo que aprovechas</span>
-            </>
-          }
-          description="No hace falta un informe para reconocer los síntomas."
-          className="mb-10 md:mb-14"
-        />
+        <div data-reveal="">
+          <SectionHeading
+            title={
+              <>
+                Señales de que estás pagando{' '}
+                <span className="text-kaidevTeal">
+                  más de lo que aprovechas
+                </span>
+              </>
+            }
+            description="No hace falta un informe para reconocer los síntomas."
+            className="mb-10 md:mb-14"
+          />
+        </div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div
+          data-reveal=""
+          className="reveal-delay-1 grid gap-6 md:grid-cols-2 lg:grid-cols-3"
+        >
           {signals.map((signal) => {
             const Icon = signal.icon;
             return (
               <div
                 key={signal.title}
-                className="rounded-lg border border-line bg-surface p-6 md:p-8"
+                className="rounded-xl border border-line bg-surface p-6 md:p-8"
               >
                 <Icon className="mb-4 h-6 w-6 text-tealDeep" />
                 <h3 className="mb-3 font-heading text-xl text-ink">
@@ -68,7 +75,7 @@ const WasteSignalsSection = () => {
             );
           })}
 
-          <div className="rounded-lg border-0 bg-surface-dark p-6 text-ink-inverse md:p-8">
+          <div className="rounded-xl border-0 bg-surface-dark p-6 text-ink-inverse md:p-8">
             <AlarmClock className="mb-4 h-6 w-6 text-silentJade" />
             <h3 className="mb-3 font-heading text-xl text-ink-inverse">
               ¿Miércoles y ya sin capacidad?

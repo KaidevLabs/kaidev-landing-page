@@ -5,21 +5,20 @@ const HeroSection = () => {
   return (
     <section
       id="inicio"
-      className="relative flex min-h-svh items-center bg-surface-dark pt-20 pb-24 text-ink-inverse"
+      className="relative isolate flex min-h-svh items-center overflow-hidden bg-surface-dark pt-20 pb-24 text-ink-inverse"
     >
-      <div aria-hidden="true" className="absolute inset-0 z-0 opacity-10">
-        <div className="h-full w-full bg-linear-to-br from-kaidevGradientFrom to-kaidevGradientTo" />
-      </div>
+      <div aria-hidden="true" className="kaidev-atmosphere" />
+      <div aria-hidden="true" className="kaidev-grain" />
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           <div className="space-y-8">
             <div>
-              <h1 className="mb-6 font-heading text-[1.875rem] leading-[1.12] font-bold tracking-tight text-balance sm:text-5xl lg:text-6xl">
+              <h1 className="hero-enter mb-6 font-heading text-[1.875rem] leading-[1.12] font-bold tracking-tight text-balance sm:text-5xl lg:text-6xl">
                 Convierte la IA en una{' '}
                 <span className="text-silentJade">ventaja operativa real</span>
               </h1>
-              <p className="mb-8 max-w-2xl text-lg leading-relaxed text-pretty text-ink-inverse/90 md:text-xl">
+              <p className="hero-enter hero-enter-2 mb-8 max-w-2xl text-lg leading-relaxed text-pretty text-ink-inverse/90 md:text-xl">
                 Más trabajo útil. Menos gasto innecesario. Los mismos estándares
                 de ingeniería. Ayudamos a las empresas a mejorar cómo sus
                 equipos utilizan la IA: flujos de trabajo, herramientas, costes
@@ -28,7 +27,7 @@ const HeroSection = () => {
               </p>
             </div>
 
-            <div className="flex flex-col gap-4 sm:flex-row">
+            <div className="hero-enter hero-enter-2 flex flex-col gap-4 sm:flex-row">
               <BookAppointmentButton />
               <a
                 href="#servicios"
@@ -39,7 +38,7 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="hidden items-center justify-center lg:flex">
+          <div className="hero-enter hero-enter-3 hidden items-center justify-center lg:flex">
             <div className="relative h-80 w-80">
               <Image
                 src="/images/isotype_gradient.svg"
@@ -52,7 +51,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 animate-bounce md:block">
+      <div className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 md:block">
         <a
           href="#problema"
           aria-label="Scroll down"

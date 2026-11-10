@@ -39,28 +39,33 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id="servicios" className="bg-canvas py-16 md:py-24">
+    <section id="servicios" className="texture-paper bg-canvas py-16 md:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          align="left"
-          accent
-          title={
-            <>
-              Un recorrido para convertir el gasto en{' '}
-              <span className="text-kaidevTeal">capacidad</span>
-            </>
-          }
-          description="No vendemos tokens, agentes ni una configuración concreta de herramientas. Vendemos la capacidad de mejorar cómo tu organización utiliza la IA. La flexibilidad está en la profundidad de cada intervención, no en un catálogo de piezas sueltas."
-          className="mb-10 md:mb-14"
-        />
+        <div data-reveal="">
+          <SectionHeading
+            align="left"
+            accent
+            title={
+              <>
+                Un recorrido para convertir el gasto en{' '}
+                <span className="text-kaidevTeal">capacidad</span>
+              </>
+            }
+            description="No vendemos tokens, agentes ni una configuración concreta de herramientas. Vendemos la capacidad de mejorar cómo tu organización utiliza la IA. La flexibilidad está en la profundidad de cada intervención, no en un catálogo de piezas sueltas."
+            className="mb-10 md:mb-14"
+          />
+        </div>
 
-        <div className="grid gap-6 md:grid-cols-2 md:gap-8">
+        <div
+          data-reveal=""
+          className="reveal-delay-1 grid gap-6 md:grid-cols-2 md:gap-8"
+        >
           {services.map((service) => {
             const Icon = service.icon;
             return (
               <div
                 key={service.number}
-                className="rounded-lg border border-line bg-surface p-6 md:p-8"
+                className="rounded-xl border border-line bg-surface p-6 md:p-8"
               >
                 <div className="mb-4 flex items-center justify-between">
                   <span className="font-heading text-sm tracking-widest text-tealDeep">
@@ -80,7 +85,7 @@ const ServicesSection = () => {
           })}
         </div>
 
-        <div className="mt-10 rounded-lg border border-line bg-surface-warm p-6 md:p-8">
+        <div className="texture-paper-warm mt-10 rounded-xl border border-line bg-surface-warm p-6 md:p-8">
           <h3 className="mb-3 font-heading text-xl text-ink">
             ¿Prefieres que lo implementemos nosotros?
           </h3>

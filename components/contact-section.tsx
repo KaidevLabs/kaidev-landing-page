@@ -5,17 +5,28 @@ const ContactSection = () => {
   return (
     <section
       id="contacto"
-      className="bg-surface-dark py-16 text-ink-inverse md:py-24"
+      className="relative isolate overflow-hidden bg-surface-dark py-16 text-ink-inverse md:py-24"
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          tone="dark"
-          accent
-          title="Hablemos"
-          className="mb-10 md:mb-14"
-        />
+      <div
+        aria-hidden="true"
+        className="kaidev-atmosphere kaidev-atmosphere--static"
+      />
+      <div aria-hidden="true" className="kaidev-grain" />
 
-        <div className="mx-auto max-w-2xl space-y-4 text-center text-lg leading-relaxed text-pretty text-ink-inverse/85">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+        <div data-reveal="">
+          <SectionHeading
+            tone="dark"
+            accent
+            title="Hablemos"
+            className="mb-10 md:mb-14"
+          />
+        </div>
+
+        <div
+          data-reveal=""
+          className="reveal-delay-1 mx-auto max-w-2xl space-y-4 text-center text-lg leading-relaxed text-pretty text-ink-inverse/85"
+        >
           <p>
             Si tu empresa ya está pagando IA y no sabes si la está aprovechando,
             esa es la conversación. Quince minutos para entender tu contexto:

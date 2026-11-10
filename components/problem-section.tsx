@@ -2,20 +2,22 @@ import SectionHeading from './section-heading';
 
 const ProblemSection = () => {
   return (
-    <section id="problema" className="bg-canvas py-16 md:py-24">
+    <section id="problema" className="texture-paper bg-canvas py-16 md:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
-          <SectionHeading
-            align="left"
-            title={
-              <>
-                Tu empresa ya tiene IA. El siguiente salto es{' '}
-                <span className="text-kaidevTeal">hacerla rendir</span>.
-              </>
-            }
-          />
+          <div data-reveal="">
+            <SectionHeading
+              align="left"
+              title={
+                <>
+                  Tu empresa ya tiene IA. El siguiente salto es{' '}
+                  <span className="text-kaidevTeal">hacerla rendir</span>.
+                </>
+              }
+            />
+          </div>
 
-          <div>
+          <div data-reveal="" className="reveal-delay-1">
             <div className="max-w-2xl space-y-4 text-lg leading-relaxed text-ink-muted">
               <p>
                 Comprar herramientas es solo el primer paso. Se contrata la
@@ -38,7 +40,7 @@ const ProblemSection = () => {
               </p>
             </div>
 
-            <div className="mt-10 max-w-2xl border-l-4 border-kaidevTeal bg-surface-warm p-6 font-heading text-xl leading-snug text-ink md:p-8 md:text-2xl">
+            <div className="texture-paper-warm mt-10 max-w-2xl border-l-4 border-kaidevTeal bg-surface-warm p-6 font-heading text-xl leading-snug text-ink md:p-8 md:text-2xl">
               Contratar herramientas de IA es sencillo. Convertir ese gasto en
               capacidad operativa medible exige ingeniería, gestión y criterio.
             </div>

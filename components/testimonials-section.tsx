@@ -77,20 +77,25 @@ const TestimonialsSection = () => {
     'inline-flex h-11 w-11 items-center justify-center rounded-full text-tealDeep transition-colors focus-visible:ring-2 focus-visible:ring-focus focus-visible:ring-offset-2 focus-visible:ring-offset-surface-warm focus-visible:outline-hidden';
 
   return (
-    <section id="testimonios" className="bg-canvas py-16 md:py-24">
+    <section
+      id="testimonios"
+      className="texture-paper bg-canvas py-16 md:py-24"
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          title={
-            <>
-              Lo que dicen{' '}
-              <span className="text-kaidevTeal">nuestros clientes</span>
-            </>
-          }
-          className="mb-10 md:mb-14"
-        />
+        <div data-reveal="">
+          <SectionHeading
+            title={
+              <>
+                Lo que dicen{' '}
+                <span className="text-kaidevTeal">nuestros clientes</span>
+              </>
+            }
+            className="mb-10 md:mb-14"
+          />
+        </div>
 
-        <div className="mx-auto max-w-4xl">
-          <div className="relative rounded-lg bg-surface-warm p-6 shadow-xs md:p-12">
+        <div data-reveal="" className="reveal-delay-1 mx-auto max-w-4xl">
+          <div className="texture-paper-warm relative rounded-2xl bg-surface-warm p-6 shadow-xs md:p-12">
             <div
               aria-hidden="true"
               className="pointer-events-none absolute top-6 left-6 text-tealDeep/15"
@@ -98,7 +103,7 @@ const TestimonialsSection = () => {
               <Quote className="h-12 w-12 md:h-16 md:w-16" />
             </div>
 
-            <div className="relative z-10">
+            <div key={currentIndex} className="testimonial-enter relative z-10">
               <div className="mb-8 flex flex-col gap-3">
                 {testimonials[currentIndex].quote.map((part, index) => (
                   <p
